@@ -1,16 +1,35 @@
-<h1>Articles recents</h1>
 <?php
-
+// Get Last 3 posts
 $posts = Mage::getModel('blog/blog')
     ->getCollection()
     ->addPresentFilter()
-    ->addStoreFilter(Mage::app()->getStore()->getId())
     ->addFieldToFilter('status', 1)
     ->setOrder('created_time ', 'desc')
     ->setPageSize(3);
 
+
 if ($posts) : ?>
-    <?php foreach ($posts as $post): ?>
-        <a href="<?php echo $post->getAddress(); ?>"><?php echo $post->getTitle(); ?></a><br/>
-    <?php endforeach; ?>
+    <section>
+        <h1 class="title h1">Derniers Articles du - Journal</h1>
+        <ul class="articles">
+            <?php foreach ($posts as $post): ?>
+                <li class="article">
+                    <article>
+                        <div class="imgDiscover">
+                            <img src="https://source.unsplash.com/random/420x270" alt="">
+                            <?php if ($post->getFeaturedImage()): ?>
+                               <!-- <img src="<?/*= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getFeaturedImage() */?>"
+                                     alt="">-->
+                            <?php endif; ?>
+                        </div>
+                        <div>
+                            <a href="<?= $post->getAddress()?>">
+                                <h2 class="title subtitle"><?php echo $post->getTitle(); ?></h2></a>
+                            <?= $post->getShortContent()?>
+                        </div>
+                    </article>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </section>
 <?php endif; ?>
