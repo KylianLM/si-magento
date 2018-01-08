@@ -1,0 +1,16 @@
+<h1>Articles recents</h1>
+<?php
+
+$posts = Mage::getModel('blog/blog')
+    ->getCollection()
+    ->addPresentFilter()
+    ->addStoreFilter(Mage::app()->getStore()->getId())
+    ->addFieldToFilter('status', 1)
+    ->setOrder('created_time ', 'desc')
+    ->setPageSize(3);
+
+if ($posts) : ?>
+    <?php foreach ($posts as $post): ?>
+        <a href="<?php echo $post->getAddress(); ?>"><?php echo $post->getTitle(); ?></a><br/>
+    <?php endforeach; ?>
+<?php endif; ?>

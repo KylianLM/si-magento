@@ -71,6 +71,9 @@ Default layout, loads most of the pages
                 <block type="cms/page" name="cms_page"/>
             </block>
         </reference>
+        <reference name="content">
+            <block type="core/template"  name="block_name" template="articles/recents.phtml" />
+        </reference>
     </cms_page>
 
     <cms_index_index translate="label">
