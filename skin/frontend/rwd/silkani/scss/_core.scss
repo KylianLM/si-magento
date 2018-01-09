@@ -37,7 +37,7 @@
   box-sizing: border-box;
 }
 
-::selection {
+*::selection, *::-moz-selection {
   color: #fff;
   background: #1E1E1E;
 }
@@ -108,5 +108,6 @@
 
 @import "blog/article";
 @import "blog/page";
+@import "blog/post";
 
 @import "components/title";

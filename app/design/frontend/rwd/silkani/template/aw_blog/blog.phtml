@@ -12,7 +12,7 @@
 
     $post = $posts->getFirstItem();
     ?>
-    <div class="blog__child"
+    <div class="blog__child blog__featured"
          style="background-image: url(http://source.unsplash.com/random/)">
         <h2 class="blog__title title title--white">Hoop Earrings A Style From History</h2>
         <div class="content">
@@ -21,6 +21,18 @@
                 <?= Mage::app()->getLocale()->date($post->getCreatedTime(), 'Y-M-d')->toString('d MMMM Y'); ?>
             </span>
         </div>
+        <ul class="social">
+            <li>
+                <a href="https://www.instagram.com/silkaniparis/"><img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'instagram.png' ?>"
+                                                                       srcset="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'instagram@2x.png' ?> 2x"
+                                                                       alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Silkani-697830700328676/"><img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'fb.png' ?>"
+                                                                                 srcset="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'fb@2x.png' ?> 2x"
+                                                                                 alt=""></a>
+            </li>
+        </ul>
     </div>
     <div class="blog__child">
         <ul class="blog__list">
@@ -35,7 +47,7 @@
                 <li class="blog__item">
                     <div class="blog__item__img">
                         <a href="<?= $this->getBaseUrl().'blog/'.$post->getIdentifier(); ?>">
-                            <img src="http://source.unsplash.com/random/300x200" alt="">
+                            <img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getFeaturedImage() ?>" alt="">
                         </a>
                     </div>
                     <div class="blog__item__content">
