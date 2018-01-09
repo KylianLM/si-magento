@@ -3,17 +3,17 @@
 }
 .home-wrapper .landing-section {
   width: 100%;
-  height: calc(100vh - 21px);
+  height: 100vh;
   background-color: #050F25;
   position: relative;
   background: url("../images/media/home-bg.jpg") no-repeat center center;
   background-size: cover;
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  align-items: center;
 }
 .home-wrapper .landing-section .block-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
 .home-wrapper .landing-section .block-text .title-1 {
@@ -23,12 +23,14 @@
   line-height: 51px;
   color: #FFFFFF;
   margin-bottom: 35px;
+  font-weight: normal !important;
 }
 .home-wrapper .landing-section .block-text .text-1 {
   font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  font-style: italic;
 }
 .home-wrapper .landing-section .block-text .button {
   width: 215px;
@@ -54,7 +56,7 @@
 .home-wrapper .landing-section .block-text .button span {
   font-size: 18px;
   line-height: 35px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   color: #C8A460;
 }

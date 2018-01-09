@@ -1,0 +1,39 @@
+.btn {
+  text-align: center;
+  border: 1px solid #C8A460;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 4px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #C8A460;
+  transition: .3s cubic-bezier(.25,.1,.25,1) 0s;
+  outline: none;
+  border-radius: 0;
+  position: relative;
+  z-index: 2;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff !important;
+  background-color: transparent;
+  span {
+    z-index: 3;
+    color: #fff !important;
+    background-color: transparent;
+  }
+}
+.btn:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  transition: .3s cubic-bezier(.25,.1,.25,1) 0s;
+  background: #C8A460;
+  top:100%; bottom: 0%; left: 0; right: 0%;
+}
+
+.btn:hover:before,
+.btn:focus:before{
+  top:0;
+}
