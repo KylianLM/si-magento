@@ -72,7 +72,7 @@ Default layout, loads most of the pages
             </block>
         </reference>
         <reference name="content">
-            <block type="core/template"  name="block_name" template="articles/recents.phtml" />
+            <block type="blog/post"  name="post" template="articles/recents.phtml" />
         </reference>
     </cms_page>
 
