@@ -71,13 +71,14 @@ Default layout, loads most of the pages
                 <block type="cms/page" name="cms_page"/>
             </block>
         </reference>
-        <reference name="content">
-            <block type="blog/post"  name="post" template="articles/recents.phtml" />
-        </reference>
+
     </cms_page>
 
     <cms_index_index translate="label">
         <label>CMS Home Page</label>
+        <reference name="content">
+            <block type="blog/post"  name="post" template="articles/recents.phtml" />
+        </reference>
     </cms_index_index>
 
     <cms_index_defaultindex>
@@ -90,6 +91,7 @@ Default layout, loads most of the pages
         <reference name="content">
             <block type="core/template" name="default_home_page" template="cms/default/home.phtml"/>
         </reference>
+
     </cms_index_defaultindex>
 
     <cms_index_noroute translate="label">
