@@ -8593,6 +8593,173 @@ div.calendar table td.button {
   margin-right: 0;
 }
 
+.home-wrapper {
+  position: relative;
+}
+.home-wrapper .landing-section {
+  width: 100%;
+  height: calc(100vh - 21px);
+  background-color: #050F25;
+  position: relative;
+  background: url("../images/media/home-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.home-wrapper .landing-section .block-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.home-wrapper .landing-section .block-text .title-1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 52px;
+  letter-spacing: 10px;
+  line-height: 51px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+.home-wrapper .landing-section .block-text .text-1 {
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.home-wrapper .landing-section .block-text .button {
+  width: 215px;
+  height: 50px;
+  margin-top: 66px;
+  text-align: center;
+  border: 1px solid #C8A460;
+  background-color: transparent;
+  position: relative;
+}
+.home-wrapper .landing-section .block-text .button::after {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: #C8A460;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+}
+.home-wrapper .landing-section .block-text .button::after:hover {
+  background-color: #C8A460;
+}
+.home-wrapper .landing-section .block-text .button span {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 2px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #C8A460;
+}
+.home-wrapper .collection-section {
+  padding: 100px 0;
+}
+.home-wrapper .collection-section .block-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-wrapper .collection-section .block-wrapper .block-left, .home-wrapper .collection-section .block-wrapper .block-right {
+  width: calc(50% - 10px);
+  height: 40vw;
+  position: relative;
+  z-index: 1;
+  background: url("https://source.unsplash.com/random") no-repeat center center;
+  background-size: cover;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .title-2, .home-wrapper .collection-section .block-wrapper .block-right .title-2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.home-wrapper .collection-section .block-wrapper .block-left:hover .block-hover, .home-wrapper .collection-section .block-wrapper .block-right:hover .block-hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
+  transition: all 350ms ease-in-out;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover, .home-wrapper .collection-section .block-wrapper .block-right .block-hover {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #050F25;
+  transition: all 350ms ease-in-out;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .title-1, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .title-1 {
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .text-1, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .text-1 {
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button {
+  width: 215px;
+  height: 50px;
+  margin-top: 66px;
+  text-align: center;
+  border: 1px solid #C8A460;
+  background-color: transparent;
+  position: relative;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button::after, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button::after {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: #C8A460;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button span, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button span {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #C8A460;
+}
+.home-wrapper .collection-section .block-wrapper .block-left {
+  background-color: lightcoral;
+  margin-right: 10px;
+}
+.home-wrapper .collection-section .block-wrapper .block-right {
+  margin-left: 10px;
+  background-color: lightblue;
+}
+
 .instagram-section {
   position: relative;
 }
@@ -8852,6 +9019,27 @@ a:hover {
   margin-top: 28px;
 }
 
+.gold_subtitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #937845;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 14px;
+  margin-bottom: 47px;
+  padding-bottom: 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+.gold_subtitle:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #937845;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
 .cms-page-view .about_container {
   display: flex;
   flex-wrap: wrap;
@@ -8869,26 +9057,6 @@ a:hover {
   .cms-page-view .about_container .about_content {
     width: 100%;
   }
-}
-.cms-page-view .about_container .gold_subtitle {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  color: #937845;
-  font-size: 14px;
-  letter-spacing: 4px;
-  line-height: 14px;
-  margin-bottom: 47px;
-  padding-bottom: 18px;
-  position: relative;
-  text-transform: uppercase;
-}
-.cms-page-view .about_container .gold_subtitle:after {
-  content: '';
-  width: 70px;
-  height: 2px;
-  background-color: #937845;
-  display: block;
-  position: absolute;
-  bottom: 0;
 }
 .cms-page-view .about_container .about_left-media {
   background: no-repeat url(../images/media/about-left.jpg) center;
@@ -9000,4 +9168,79 @@ a:hover {
   .cms-page-view .about_container .about_left-media, .cms-page-view .about_container .about_right-media {
     height: 200px;
   }
+}
+
+.product-view .product-info_content {
+  display: flex;
+}
+.product-view h2 {
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  margin-bottom: 33px;
+}
+.product-view .add-to-cart-wrapper {
+  padding: 0;
+  float: none;
+}
+.product-view .product-img-box {
+  padding: 0;
+}
+.product-view .product-img-box .product-image {
+  height: 100%;
+  width: 100%;
+}
+.product-view .product-img-box .product-image .product-image-gallery {
+  height: inherit;
+  width: inherit;
+}
+.product-view .product-img-box .product-image .product-image-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-view .product-shop {
+  padding: 117px;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 28px;
+}
+.product-view .product-shop .product-name {
+  float: none;
+}
+.product-view .product-shop .price-info {
+  font-family: "Playfair Display", sans-serif;
+  padding: 0 0 18px;
+  max-width: none;
+  float: none;
+  text-align: left;
+  position: relative;
+}
+.product-view .product-shop .price-info:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #050F25;
+  position: absolute;
+  bottom: 0;
+}
+.product-view .product-shop .price-info .regular-price .price {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  line-height: 30px;
+  color: #050F25;
+}
+.product-view .product-shop .description {
+  padding: 30px 0;
+}
+.product-view .product-shop .add-to-cart-wrapper {
+  width: auto;
+}
+.product-view .product-shop .add-to-cart-wrapper .button {
+  height: 60px;
+  background-color: #050F25;
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
 }
