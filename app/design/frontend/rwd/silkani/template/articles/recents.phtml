@@ -23,7 +23,7 @@ if ($posts) : ?>
                             <?php endif; ?>
                         </div>
                         <div>
-                            <a href="<?php echo $this->getBaseUrl().'blog/'.$post->getIdentifier();?>">
+                            <a href="<?= $this->getBaseUrl().'blog/'.$post->getIdentifier();?>">
                                 <h2 class="title subtitle"><?php echo $post->getTitle(); ?></h2></a>
                             <?= $post->getShortContent()?>
                         </div>

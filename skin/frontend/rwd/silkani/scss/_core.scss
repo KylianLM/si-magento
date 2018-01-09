@@ -33,6 +33,15 @@
 @import "vendor/normalize";
 @import "core/reset";
 
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: #1E1E1E;
+}
+
 // ----------------------------------------------
 // Core
 
@@ -98,5 +107,6 @@
 @import "override/plugin";
 
 @import "blog/article";
+@import "blog/page";
 
 @import "components/title";
