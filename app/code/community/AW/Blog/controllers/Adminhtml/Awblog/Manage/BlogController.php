@@ -1,4 +1,5 @@
 <?php
+
 /**
  * aheadWorks Co.
  *
@@ -23,8 +24,6 @@
  * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
  * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
  */
-
-
 class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Controller_Action
 {
     public function preDispatch()
@@ -41,8 +40,7 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
     {
         $this
             ->loadLayout()
-            ->_setActiveMenu('blog/posts')
-        ;
+            ->_setActiveMenu('blog/posts');
 
         return $this;
     }
@@ -52,8 +50,7 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
         $this->displayTitle('Posts');
         $this
             ->_initAction()
-            ->renderLayout()
-        ;
+            ->renderLayout();
     }
 
     public function editAction()
@@ -77,8 +74,7 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
 
             $this
                 ->_addContent($this->getLayout()->createBlock('blog/manage_blog_edit'))
-                ->_addLeft($this->getLayout()->createBlock('blog/manage_blog_edit_tabs'))
-            ;
+                ->_addLeft($this->getLayout()->createBlock('blog/manage_blog_edit_tabs'));
 
             $this->getLayout()->getBlock('head')->setCanLoadTinyMce(true);
 
@@ -109,8 +105,7 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
 
         $this
             ->_addContent($this->getLayout()->createBlock('blog/manage_blog_edit'))
-            ->_addLeft($this->getLayout()->createBlock('blog/manage_blog_edit_tabs'))
-        ;
+            ->_addLeft($this->getLayout()->createBlock('blog/manage_blog_edit_tabs'));
         $this->getLayout()->getBlock('head')->setCanLoadTinyMce(true);
         $this->renderLayout();
     }
@@ -119,9 +114,9 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
     {
         $oldIdentifier = $this->getRequest()->getParam('identifier');
         $i = 1;
-        $newIdentifier = $oldIdentifier . $i;
+        $newIdentifier = $oldIdentifier.$i;
         while (Mage::getModel('blog/post')->loadByIdentifier($newIdentifier)->getData()) {
-            $newIdentifier = $oldIdentifier . ++$i;
+            $newIdentifier = $oldIdentifier.++$i;
         }
         $this->getRequest()->setPost('identifier', $newIdentifier);
         $this->_forward('save');
@@ -131,6 +126,32 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
     {
         if ($data = $this->getRequest()->getPost()) {
             $model = Mage::getModel('blog/post');
+
+            if (isset($_FILES['featured_image']['name']) and (file_exists($_FILES['featured_image']['tmp_name']))) {
+                try {
+                    $uploader = new Varien_File_Uploader('featured_image');
+                    $uploader->setAllowedExtensions(array('jpg', 'jpeg', 'gif', 'png'));
+                    $uploader->setAllowRenameFiles(false);
+                    $uploader->setFilesDispersion(false);
+                    $path = Mage::getBaseDir('media').DS;
+
+                    $filename = preg_replace('/[^a-z0-9\.]/', '', strtolower($_FILES['featured_image']['name']));
+
+                    $uploader->save($path, $filename);
+
+                    $data['featured_image'] = $filename;
+                } catch (Exception $e) {
+
+                }
+            } // handle delete image
+            else {
+                if (isset($data['featured_image']['delete']) && $data['featured_image']['delete'] == 1) {
+                    $data['image_main'] = '';
+                } else {
+                    unset($data['featured_image']);
+                }
+            }
+
             if (isset($data['tags'])) {
                 if ($this->getRequest()->getParam('id')) {
                     $model->load($this->getRequest()->getParam('id'));
@@ -167,11 +188,9 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
                     }
                 }
             }
-
             $model
                 ->setData($data)
-                ->setId($this->getRequest()->getParam('id'))
-            ;
+                ->setId($this->getRequest()->getParam('id'));
 
             try {
                 $format = Mage::app()->getLocale()->getDateTimeFormat(Mage_Core_Model_Locale::FORMAT_TYPE_MEDIUM);
@@ -186,24 +205,22 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
                 if ($this->getRequest()->getParam('user') == null) {
                     $model
                         ->setUser(
-                            Mage::getSingleton('admin/session')->getUser()->getFirstname() . " " . Mage::getSingleton(
+                            Mage::getSingleton('admin/session')->getUser()->getFirstname()." ".Mage::getSingleton(
                                 'admin/session'
                             )->getUser()->getLastname()
                         )
                         ->setUpdateUser(
-                            Mage::getSingleton('admin/session')->getUser()->getFirstname() . " " . Mage::getSingleton(
+                            Mage::getSingleton('admin/session')->getUser()->getFirstname()." ".Mage::getSingleton(
                                 'admin/session'
                             )->getUser()->getLastname()
-                        )
-                    ;
+                        );
                 } else {
                     $model
                         ->setUpdateUser(
-                            Mage::getSingleton('admin/session')->getUser()->getFirstname() . " " . Mage::getSingleton(
+                            Mage::getSingleton('admin/session')->getUser()->getFirstname()." ".Mage::getSingleton(
                                 'admin/session'
                             )->getUser()->getLastname()
-                        )
-                    ;
+                        );
                 }
 
                 $model->save();
@@ -232,14 +249,17 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
 
                 if ($this->getRequest()->getParam('back')) {
                     $this->_redirect('*/*/edit', array('id' => $model->getId()));
+
                     return;
                 }
                 $this->_redirect('*/*/');
+
                 return;
             } catch (Exception $e) {
                 Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
                 Mage::getSingleton('adminhtml/session')->setFormData($data);
                 $this->_redirect('*/*/edit', array('id' => $this->getRequest()->getParam('id')));
+
                 return;
             }
         }
@@ -316,8 +336,7 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
                         ->setStatus($this->getRequest()->getParam('status'))
                         ->setStores('')
                         ->setIsMassupdate(true)
-                        ->save()
-                    ;
+                        ->save();
                 }
                 $this->_getSession()->addSuccess(
                     $this->__('Total of %d record(s) were successfully updated', count($blogIds))
@@ -345,6 +364,7 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
                 $this->_title($this->__('Blog'))->_title($root);
             }
         }
+
         return $this;
     }
 }

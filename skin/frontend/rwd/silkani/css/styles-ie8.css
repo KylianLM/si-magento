@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Yanone+Kaffeesatz:300,400,700");
+@charset "UTF-8";
 /*
 // ----------------------------------------------
 // Usage example:
@@ -531,7 +531,7 @@ h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
   color: #3399CC;
-  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 28px;
   font-weight: 400;
   font-style: normal;
@@ -893,7 +893,7 @@ a.button:hover {
   text-transform: uppercase;
   display: inline-block;
   color: #3399CC;
-  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .button2 span:hover,
 .button2 span span:hover {
@@ -1969,7 +1969,7 @@ span.weee {
   height: 30px;
   padding: 0;
   color: #3399CC;
-  font-family: "Yanone Kaffeesatz", sans-serif, Verdana, Arial, sans-serif;
+  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 .pages .current,
@@ -4604,7 +4604,7 @@ p.product-name a:hover {
 
 .grouped-items-table .name-wrapper {
   color: #3399CC;
-  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .grouped-items-table .qty-wrapper {
   padding-top: 7px;
@@ -6904,7 +6904,7 @@ div.paypal-logo span > img {
 }
 #customer-reviews .fieldset h4 {
   border-bottom: 1px solid #CCCCCC;
-  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   padding-bottom: 5px;
@@ -6980,7 +6980,7 @@ div.paypal-logo span > img {
 }
 #customer-reviews dl dd .review-meta {
   color: #3399CC;
-  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 10px;
   font-weight: normal;
   text-transform: uppercase;
@@ -7892,7 +7892,7 @@ div.paypal-logo span > img {
  * ============================================ */
 .price-box .minimal-price-link .label {
   color: #CF5050;
-  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -8398,4 +8398,80 @@ div.calendar table td.button {
   background: inherit;
   color: inherit;
   text-transform: none;
+}
+
+/* ============================================ *
+ * Articles homepage
+ * ============================================ */
+.articles {
+  display: flex;
+  margin-top: 42px;
+}
+
+.articles .article {
+  width: 33%;
+  padding: 12px;
+}
+
+.articles .article img {
+  width: 100%;
+}
+
+.articles .article .imgDiscover {
+  position: relative;
+}
+
+.articles .article .imgDiscover:before {
+  content: "Découvrir";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10;
+  text-decoration: underline;
+  color: #C8A460;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+.article p {
+  font-family: "Playfair Display";
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 31px;
+  color: #1E1E1E;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #1E1E1E !important;
+  font-weight: normal !important;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+.title:hover {
+  text-decoration: none;
+}
+
+.subtitle {
+  text-align: left !important;
+  font-size: 22px;
+  margin-top: 28px;
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * aheadWorks Co.
  *
@@ -23,8 +24,6 @@
  * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
  * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
  */
-
-
 class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
 {
     protected function _prepareForm()
@@ -33,14 +32,19 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
         $this->setForm($form);
         $fieldset = $form->addFieldset('blog_form', array('legend' => Mage::helper('blog')->__('Post information')));
 
+        $fieldset->addField('featured_image', 'image', array(
+            'name' => 'featured_image',
+            'label' => 'Featured Image',
+        ));
+
         $fieldset->addField(
             'title',
             'text',
             array(
-                 'label'    => Mage::helper('blog')->__('Title'),
-                 'class'    => 'required-entry',
-                 'required' => true,
-                 'name'     => 'title',
+                'label' => Mage::helper('blog')->__('Title'),
+                'class' => 'required-entry',
+                'required' => true,
+                'name' => 'title',
             )
         );
 
@@ -56,15 +60,15 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'identifier',
             'text',
             array(
-                 'label'              => Mage::helper('blog')->__('Identifier'),
-                 'class'              => 'required-entry aw-blog-validate-identifier',
-                 'required'           => true,
-                 'name'               => 'identifier',
-                 'after_element_html' => '<span class="hint">' . $noticeMessage . '</span>'
-                     . "<script>
+                'label' => Mage::helper('blog')->__('Identifier'),
+                'class' => 'required-entry aw-blog-validate-identifier',
+                'required' => true,
+                'name' => 'identifier',
+                'after_element_html' => '<span class="hint">'.$noticeMessage.'</span>'
+                    ."<script>
                         Validation.add(
                             'aw-blog-validate-identifier',
-                            '" . $validationErrorMessage . "',
+                            '".$validationErrorMessage."',
                             function(v, elm) {
                                 var regex = new RegExp(/^[a-zA-Z0-9_-]+$/);
                                 return v.match(regex);
@@ -82,11 +86,11 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
                 'store_id',
                 'multiselect',
                 array(
-                     'name'     => 'stores[]',
-                     'label'    => Mage::helper('cms')->__('Store View'),
-                     'title'    => Mage::helper('cms')->__('Store View'),
-                     'required' => true,
-                     'values'   => Mage::getSingleton('adminhtml/system_store')->getStoreValuesForForm(false, true),
+                    'name' => 'stores[]',
+                    'label' => Mage::helper('cms')->__('Store View'),
+                    'title' => Mage::helper('cms')->__('Store View'),
+                    'required' => true,
+                    'values' => Mage::getSingleton('adminhtml/system_store')->getStoreValuesForForm(false, true),
                 )
             );
         }
@@ -96,7 +100,7 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
         foreach ($collection as $cat) {
             $categories[] = (array(
                 'label' => (string)$cat->getTitle(),
-                'value' => $cat->getCatId()
+                'value' => $cat->getCatId(),
             ));
         }
 
@@ -104,12 +108,12 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'cat_id',
             'multiselect',
             array(
-                 'name'     => 'cats[]',
-                 'label'    => Mage::helper('blog')->__('Category'),
-                 'title'    => Mage::helper('blog')->__('Category'),
-                 'required' => true,
-                 'style'    => 'height:100px',
-                 'values'   => $categories,
+                'name' => 'cats[]',
+                'label' => Mage::helper('blog')->__('Category'),
+                'title' => Mage::helper('blog')->__('Category'),
+                'required' => true,
+                'style' => 'height:100px',
+                'values' => $categories,
             )
         );
 
@@ -117,27 +121,27 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'status',
             'select',
             array(
-                 'label'              => Mage::helper('blog')->__('Status'),
-                 'name'               => 'status',
-                 'values'             => array(
-                     array(
-                         'value' => 1,
-                         'label' => Mage::helper('blog')->__('Enabled'),
-                     ),
-                     array(
-                         'value' => 2,
-                         'label' => Mage::helper('blog')->__('Disabled'),
-                     ),
-                     array(
-                         'value' => 3,
-                         'label' => Mage::helper('blog')->__('Hidden'),
-                     ),
-                 ),
-                 'after_element_html' => '<span class="hint">'
-                     . Mage::helper('blog')->__(
-                         "Hidden pages won't be shown in blog but still can be accessed directly"
-                     )
-                     . '</span>',
+                'label' => Mage::helper('blog')->__('Status'),
+                'name' => 'status',
+                'values' => array(
+                    array(
+                        'value' => 1,
+                        'label' => Mage::helper('blog')->__('Enabled'),
+                    ),
+                    array(
+                        'value' => 2,
+                        'label' => Mage::helper('blog')->__('Disabled'),
+                    ),
+                    array(
+                        'value' => 3,
+                        'label' => Mage::helper('blog')->__('Hidden'),
+                    ),
+                ),
+                'after_element_html' => '<span class="hint">'
+                    .Mage::helper('blog')->__(
+                        "Hidden pages won't be shown in blog but still can be accessed directly"
+                    )
+                    .'</span>',
             )
         );
 
@@ -145,23 +149,23 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'comments',
             'select',
             array(
-                 'label'              => Mage::helper('blog')->__('Enable Comments'),
-                 'name'               => 'comments',
-                 'values'             => array(
-                     array(
-                         'value' => 0,
-                         'label' => Mage::helper('blog')->__('Enabled'),
-                     ),
-                     array(
-                         'value' => 1,
-                         'label' => Mage::helper('blog')->__('Disabled'),
-                     ),
-                 ),
-                 'after_element_html' => '<span class="hint">'
-                     . Mage::helper('blog')->__(
-                         'Disabling will close the post to new comments'
-                     )
-                     . '</span>',
+                'label' => Mage::helper('blog')->__('Enable Comments'),
+                'name' => 'comments',
+                'values' => array(
+                    array(
+                        'value' => 0,
+                        'label' => Mage::helper('blog')->__('Enabled'),
+                    ),
+                    array(
+                        'value' => 1,
+                        'label' => Mage::helper('blog')->__('Disabled'),
+                    ),
+                ),
+                'after_element_html' => '<span class="hint">'
+                    .Mage::helper('blog')->__(
+                        'Disabling will close the post to new comments'
+                    )
+                    .'</span>',
             )
         );
 
@@ -169,11 +173,11 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'tags',
             'text',
             array(
-                 'name'               => 'tags',
-                 'label'              => Mage::helper('blog')->__('Tags'),
-                 'title'              => Mage::helper('blog')->__('tags'),
-                 'style'              => 'width:700px;',
-                 'after_element_html' => Mage::helper('blog')->__('Use comma as separator'),
+                'name' => 'tags',
+                'label' => Mage::helper('blog')->__('Tags'),
+                'title' => Mage::helper('blog')->__('tags'),
+                'style' => 'width:700px;',
+                'after_element_html' => Mage::helper('blog')->__('Use comma as separator'),
             )
         );
 
@@ -182,7 +186,7 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             $config->setData(
                 Mage::helper('blog')->recursiveReplace(
                     '/blog_admin/',
-                    '/' . (string)Mage::app()->getConfig()->getNode('admin/routers/adminhtml/args/frontName') . '/',
+                    '/'.(string)Mage::app()->getConfig()->getNode('admin/routers/adminhtml/args/frontName').'/',
                     $config->getData()
                 )
             );
@@ -195,11 +199,11 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
                 'short_content',
                 'editor',
                 array(
-                     'name'   => 'short_content',
-                     'label'  => Mage::helper('blog')->__('Short Content'),
-                     'title'  => Mage::helper('blog')->__('Short Content'),
-                     'style'  => 'width:700px; height:100px;',
-                     'config' => $config,
+                    'name' => 'short_content',
+                    'label' => Mage::helper('blog')->__('Short Content'),
+                    'title' => Mage::helper('blog')->__('Short Content'),
+                    'style' => 'width:700px; height:100px;',
+                    'config' => $config,
                 )
             );
         }
@@ -207,11 +211,11 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'post_content',
             'editor',
             array(
-                 'name'   => 'post_content',
-                 'label'  => Mage::helper('blog')->__('Content'),
-                 'title'  => Mage::helper('blog')->__('Content'),
-                 'style'  => 'width:700px; height:500px;',
-                 'config' => $config
+                'name' => 'post_content',
+                'label' => Mage::helper('blog')->__('Content'),
+                'title' => Mage::helper('blog')->__('Content'),
+                'style' => 'width:700px; height:500px;',
+                'config' => $config,
             )
         );
 
@@ -224,6 +228,7 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             );
             $form->setValues(Mage::registry('blog_data')->getData());
         }
+
         return parent::_prepareForm();
     }
 }
