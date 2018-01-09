@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Yanone+Kaffeesatz:300,400,700");
 /*
 // ----------------------------------------------
 // Usage example:
@@ -662,7 +663,7 @@ h2.products {
 
 .product-name {
   margin: 0 0 5px 0;
-  color: #636363;
+  color: #050F25;
   font-style: normal;
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
@@ -684,7 +685,7 @@ p.sku {
  * ============================================ */
 .price-box {
   margin: 7px 0;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif, Verdana, Arial, sans-serif;
 }
 
 .price-box p {
@@ -696,24 +697,24 @@ p.sku {
 }
 
 .price-box .price {
-  color: #3399CC;
+  color: #050F25;
   font-size: 16px;
 }
 
 .price-box .price,
 .price {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif, Verdana, Arial, sans-serif;
 }
 
 .price-box .price-label {
   color: #A0A0A0;
   white-space: nowrap;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 .price-box .minimal-price-link {
   padding-left: 1em;
-  color: #3399CC;
+  color: #050F25;
   display: block;
   /* We want this to show on its own line, otherwise the layout looks funky */
 }
@@ -743,7 +744,7 @@ p.sku {
 }
 
 .price-box .special-price {
-  color: #3399CC;
+  color: #050F25;
   padding-left: 1em;
 }
 .price-box .special-price .price-label {
