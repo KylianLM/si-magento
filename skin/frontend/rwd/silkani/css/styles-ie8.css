@@ -4613,8 +4613,8 @@ p.product-name a:hover {
 }
 
 .grouped-items-table .name-wrapper {
-  color: #3399CC;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  color: #050F25;
+  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .grouped-items-table .qty-wrapper {
   padding-top: 7px;
@@ -5880,8 +5880,8 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .block-progress .payment-info dt {
   padding: 0;
   margin: 0 0 3px 0;
-  color: #636363;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  color: #050F25;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   text-transform: none;
   font-style: italic;
   float: left;
@@ -7745,8 +7745,8 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std p,
 .cms-no-route .std p {
-  color: #636363;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  color: #050F25;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
@@ -7761,8 +7761,8 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std li,
 .cms-no-route .std li {
-  color: #636363;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  color: #050F25;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
@@ -8591,173 +8591,6 @@ div.calendar table td.button {
 
 .blog .social li:last-child {
   margin-right: 0;
-}
-
-.home-wrapper {
-  position: relative;
-}
-.home-wrapper .landing-section {
-  width: 100%;
-  height: calc(100vh - 21px);
-  background-color: #050F25;
-  position: relative;
-  background: url("../images/media/home-bg.jpg") no-repeat center center;
-  background-size: cover;
-}
-.home-wrapper .landing-section .block-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  text-align: center;
-}
-.home-wrapper .landing-section .block-text .title-1 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 52px;
-  letter-spacing: 10px;
-  line-height: 51px;
-  color: #FFFFFF;
-  margin-bottom: 35px;
-}
-.home-wrapper .landing-section .block-text .text-1 {
-  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-.home-wrapper .landing-section .block-text .button {
-  width: 215px;
-  height: 50px;
-  margin-top: 66px;
-  text-align: center;
-  border: 1px solid #C8A460;
-  background-color: transparent;
-  position: relative;
-}
-.home-wrapper .landing-section .block-text .button::after {
-  content: '';
-  width: 1px;
-  height: 15px;
-  background-color: #C8A460;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-}
-.home-wrapper .landing-section .block-text .button::after:hover {
-  background-color: #C8A460;
-}
-.home-wrapper .landing-section .block-text .button span {
-  font-size: 18px;
-  line-height: 35px;
-  letter-spacing: 2px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  color: #C8A460;
-}
-.home-wrapper .collection-section {
-  padding: 100px 0;
-}
-.home-wrapper .collection-section .block-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.home-wrapper .collection-section .block-wrapper .block-left, .home-wrapper .collection-section .block-wrapper .block-right {
-  width: calc(50% - 10px);
-  height: 40vw;
-  position: relative;
-  z-index: 1;
-  background: url("https://source.unsplash.com/random") no-repeat center center;
-  background-size: cover;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .title-2, .home-wrapper .collection-section .block-wrapper .block-right .title-2 {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  text-align: center;
-  width: 100%;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 32px;
-  letter-spacing: 6px;
-  line-height: 32px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
-}
-.home-wrapper .collection-section .block-wrapper .block-left:hover .block-hover, .home-wrapper .collection-section .block-wrapper .block-right:hover .block-hover {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: inherit;
-  transition: all 350ms ease-in-out;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover, .home-wrapper .collection-section .block-wrapper .block-right .block-hover {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #050F25;
-  transition: all 350ms ease-in-out;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  text-align: center;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .title-1, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .title-1 {
-  width: 100%;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 32px;
-  letter-spacing: 6px;
-  line-height: 32px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .text-1, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .text-1 {
-  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button {
-  width: 215px;
-  height: 50px;
-  margin-top: 66px;
-  text-align: center;
-  border: 1px solid #C8A460;
-  background-color: transparent;
-  position: relative;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button::after, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button::after {
-  content: '';
-  width: 1px;
-  height: 15px;
-  background-color: #C8A460;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-}
-.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button span, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button span {
-  font-size: 18px;
-  line-height: 35px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  color: #C8A460;
-}
-.home-wrapper .collection-section .block-wrapper .block-left {
-  background-color: lightcoral;
-  margin-right: 10px;
-}
-.home-wrapper .collection-section .block-wrapper .block-right {
-  margin-left: 10px;
-  background-color: lightblue;
 }
 
 .instagram-section {

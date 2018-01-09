@@ -5598,7 +5598,7 @@ p.product-name a:hover {
 }
 
 .grouped-items-table .name-wrapper {
-  color: #3399CC;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .grouped-items-table .qty-wrapper {
@@ -7230,7 +7230,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .block-progress .payment-info dt {
   padding: 0;
   margin: 0 0 3px 0;
-  color: #636363;
+  color: #050F25;
   font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   text-transform: none;
   font-style: italic;
@@ -9683,7 +9683,7 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std p,
 .cms-no-route .std p {
-  color: #636363;
+  color: #050F25;
   font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
@@ -9699,7 +9699,7 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std li,
 .cms-no-route .std li {
-  color: #636363;
+  color: #050F25;
   font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
