@@ -76,8 +76,17 @@ Default layout, loads most of the pages
 
     <cms_index_index translate="label">
         <label>CMS Home Page</label>
+
+        <reference name="content">
+            <block type="core/template" name="home" template="home/homepage.phtml" />
+        </reference>
+
         <reference name="content">
             <block type="blog/post"  name="post" template="articles/recents.phtml" />
+        </reference>
+
+        <reference name="content">
+            <block type="core/template" name="instagram" template="instagram/instagram.phtml" />
         </reference>
     </cms_index_index>
 

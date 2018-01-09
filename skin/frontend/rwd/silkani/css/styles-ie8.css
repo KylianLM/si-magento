@@ -2545,7 +2545,7 @@ p.required,
 
 form .form-instructions {
   font-style: italic;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 13px;
   color: #A0A0A0;
 }
@@ -2585,7 +2585,7 @@ form .form-instructions {
 
 .data-table tbody td,
 .data-table tfoot td {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
 }
 
 .data-table tfoot tr {
@@ -2681,6 +2681,7 @@ body {
 .page-header {
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .page-header-container {
@@ -5251,7 +5252,7 @@ p.product-name a:hover {
   display: none;
 }
 .cart-table .product-cart-sku {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   font-size: 12px;
   margin: 5px 0 12px;
@@ -5398,7 +5399,7 @@ p.product-name a:hover {
   margin-bottom: 10px;
 }
 .shipping .sp-methods label {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 12px;
   font-style: italic;
   min-width: 100px;
@@ -5858,7 +5859,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .block-progress dd {
   padding-left: 15px;
   margin-bottom: 10px;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
 }
 .block-progress dd address {
@@ -5871,7 +5872,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding: 0;
   margin: 0 0 3px 0;
   color: #636363;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   text-transform: none;
   font-style: italic;
   float: left;
@@ -6311,7 +6312,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 
 .opc #opc-login p:not(.required) {
   font-style: italic;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 13px;
   color: #A0A0A0;
 }
@@ -6501,7 +6502,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .dashboard .box-account p,
 .dashboard .box-account address {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
 }
 .dashboard .col2-set .col-1,
@@ -6566,7 +6567,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
  * Address Book
  * ============================================ */
 .my-account .addresses-list {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
 }
 .my-account .addresses-list .col-1,
 .my-account .addresses-list .col-2 {
@@ -6649,11 +6650,11 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .order-info-box .box-content {
   float: left;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
 }
 .order-info-box .box-content td,
 .order-info-box .box-content th {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   line-height: 1.3;
 }
 .order-info-box .box-content th {
@@ -6959,7 +6960,7 @@ div.paypal-logo span > img {
   text-transform: uppercase;
 }
 #customer-reviews dl dd {
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   margin: 10px 0;
 }
@@ -7736,7 +7737,7 @@ div.paypal-logo span > img {
 .cms-page-view .std p,
 .cms-no-route .std p {
   color: #636363;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
@@ -7752,7 +7753,7 @@ div.paypal-logo span > img {
 .cms-page-view .std li,
 .cms-no-route .std li {
   color: #636363;
-  font-family: "Playfair", serif, Georgia, Times, "Times New Roman", serif;
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
@@ -8445,6 +8446,278 @@ div.calendar table td.button {
   margin-top: 16px;
   line-height: 31px;
   color: #1E1E1E;
+}
+
+.home-wrapper {
+  position: relative;
+}
+.home-wrapper .landing-section {
+  width: 100%;
+  height: calc(100vh - 21px);
+  background-color: #050F25;
+  position: relative;
+  background: url("../images/media/home-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.home-wrapper .landing-section .block-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.home-wrapper .landing-section .block-text .title-1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 52px;
+  letter-spacing: 10px;
+  line-height: 51px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+.home-wrapper .landing-section .block-text .text-1 {
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.home-wrapper .landing-section .block-text .button {
+  width: 215px;
+  height: 50px;
+  margin-top: 66px;
+  text-align: center;
+  border: 1px solid #C8A460;
+  background-color: transparent;
+  position: relative;
+}
+.home-wrapper .landing-section .block-text .button::after {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: #C8A460;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+}
+.home-wrapper .landing-section .block-text .button::after:hover {
+  background-color: #C8A460;
+}
+.home-wrapper .landing-section .block-text .button span {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 2px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #C8A460;
+}
+.home-wrapper .collection-section {
+  padding: 100px 0;
+}
+.home-wrapper .collection-section .block-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-wrapper .collection-section .block-wrapper .block-left, .home-wrapper .collection-section .block-wrapper .block-right {
+  width: calc(50% - 10px);
+  height: 40vw;
+  position: relative;
+  z-index: 1;
+  background: url("https://source.unsplash.com/random") no-repeat center center;
+  background-size: cover;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .title-2, .home-wrapper .collection-section .block-wrapper .block-right .title-2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.home-wrapper .collection-section .block-wrapper .block-left:hover .block-hover, .home-wrapper .collection-section .block-wrapper .block-right:hover .block-hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
+  transition: all 350ms ease-in-out;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover, .home-wrapper .collection-section .block-wrapper .block-right .block-hover {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #050F25;
+  transition: all 350ms ease-in-out;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .title-1, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .title-1 {
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .text-1, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .text-1 {
+  font-family: "Playfair Display", serif, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button {
+  width: 215px;
+  height: 50px;
+  margin-top: 66px;
+  text-align: center;
+  border: 1px solid #C8A460;
+  background-color: transparent;
+  position: relative;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button::after, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button::after {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: #C8A460;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+}
+.home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button span, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button span {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #C8A460;
+}
+.home-wrapper .collection-section .block-wrapper .block-left {
+  background-color: lightcoral;
+  margin-right: 10px;
+}
+.home-wrapper .collection-section .block-wrapper .block-right {
+  margin-left: 10px;
+  background-color: lightblue;
+}
+
+.instagram-section {
+  position: relative;
+}
+.instagram-section .title {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.instagram-section .instagram-wrapper {
+  max-width: 1280px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.instagram-section .instagram-wrapper .row {
+  width: 33%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.instagram-section .instagram-wrapper .row:nth-child(1) .block-picture:nth-child(1) {
+  background: url("../images/media/1.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram-section .instagram-wrapper .row:nth-child(1) .block-picture:nth-child(2) {
+  background: url("../images/media/2.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram-section .instagram-wrapper .row:nth-child(2) .block-picture:nth-child(1) {
+  background: url("../images/media/3.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram-section .instagram-wrapper .row:nth-child(2) .block-picture:nth-child(2) {
+  background: url("../images/media/4.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram-section .instagram-wrapper .row:nth-child(3) .block-picture:nth-child(1) {
+  background: url("../images/media/5.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram-section .instagram-wrapper .row:nth-child(3) .block-picture:nth-child(2) {
+  background: url("../images/media/6.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram-section .instagram-wrapper .row .block-picture {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+}
+.instagram-section .instagram-wrapper .row .block-picture .block-hover {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #050F25;
+  transition: all 350ms ease-in-out;
+}
+.instagram-section .instagram-wrapper .row .block-picture .block-hover .insta-link {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 22px;
+  color: #C8A460;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.instagram-section .instagram-wrapper .row .block-picture .block-hover .insta-link span {
+  position: relative;
+  text-align: center;
+}
+.instagram-section .instagram-wrapper .row .block-picture .block-hover .insta-link span::after {
+  content: '';
+  width: 97%;
+  height: 2px;
+  background: #C8A460;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+.instagram-section .instagram-wrapper .row .block-picture:hover .block-hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
+  transition: all 350ms ease-in-out;
 }
 
 a:hover {
