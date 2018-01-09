@@ -9253,6 +9253,27 @@ a:hover {
   margin-top: 28px;
 }
 
+.gold_subtitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #937845;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 14px;
+  margin-bottom: 47px;
+  padding-bottom: 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+.gold_subtitle:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #937845;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
 .header {
   z-index: 100;
   position: absolute;
@@ -9461,26 +9482,6 @@ a:hover {
     width: 100%;
   }
 }
-.cms-page-view .about_container .gold_subtitle {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  color: #937845;
-  font-size: 14px;
-  letter-spacing: 4px;
-  line-height: 14px;
-  margin-bottom: 47px;
-  padding-bottom: 18px;
-  position: relative;
-  text-transform: uppercase;
-}
-.cms-page-view .about_container .gold_subtitle:after {
-  content: '';
-  width: 70px;
-  height: 2px;
-  background-color: #937845;
-  display: block;
-  position: absolute;
-  bottom: 0;
-}
 .cms-page-view .about_container .about_left-media {
   background: no-repeat url(../images/media/about-left.jpg) center;
   -webkit-background-size: cover;
@@ -9591,6 +9592,81 @@ a:hover {
   .cms-page-view .about_container .about_left-media, .cms-page-view .about_container .about_right-media {
     height: 200px;
   }
+}
+
+.product-view .product-info_content {
+  display: flex;
+}
+.product-view h2 {
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  margin-bottom: 33px;
+}
+.product-view .add-to-cart-wrapper {
+  padding: 0;
+  float: none;
+}
+.product-view .product-img-box {
+  padding: 0;
+}
+.product-view .product-img-box .product-image {
+  height: 100%;
+  width: 100%;
+}
+.product-view .product-img-box .product-image .product-image-gallery {
+  height: inherit;
+  width: inherit;
+}
+.product-view .product-img-box .product-image .product-image-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-view .product-shop {
+  padding: 117px;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 28px;
+}
+.product-view .product-shop .product-name {
+  float: none;
+}
+.product-view .product-shop .price-info {
+  font-family: "Playfair Display", sans-serif;
+  padding: 0 0 18px;
+  max-width: none;
+  float: none;
+  text-align: left;
+  position: relative;
+}
+.product-view .product-shop .price-info:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #050F25;
+  position: absolute;
+  bottom: 0;
+}
+.product-view .product-shop .price-info .regular-price .price {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  line-height: 30px;
+  color: #050F25;
+}
+.product-view .product-shop .description {
+  padding: 30px 0;
+}
+.product-view .product-shop .add-to-cart-wrapper {
+  width: auto;
+}
+.product-view .product-shop .add-to-cart-wrapper .button {
+  height: 60px;
+  background-color: #050F25;
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
 }
 
 ::selection {

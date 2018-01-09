@@ -1,0 +1,91 @@
+.product-view {
+  .product-info_content {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+    line-height: 32px;
+    margin-bottom: 33px;
+  }
+
+  .add-to-cart-wrapper {
+    padding: 0;
+    float: none;
+  }
+
+  .product-img-box {
+    padding: 0;
+
+    .product-image {
+      height: 100%;
+      width: 100%;
+
+      .product-image-gallery {
+        height: inherit;
+        width: inherit;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .product-shop {
+    padding: 117px;
+    font-family: "Playfair Display", sans-serif;
+    line-height: 28px;
+
+    .product-name {
+      float: none;
+    }
+
+    .price-info {
+      font-family: "Playfair Display", sans-serif;
+      padding: 0 0 18px;
+      max-width: none;
+      float: none;
+      text-align: left;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background-color: $c-text;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .regular-price .price {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 22px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        color: $c-text;
+      }
+    }
+
+    .description {
+      padding: 30px 0;
+    }
+
+    .add-to-cart-wrapper {
+      width: auto;
+      
+      .button {
+        height: 60px;
+        background-color: $c-text;
+        width: 100%;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
