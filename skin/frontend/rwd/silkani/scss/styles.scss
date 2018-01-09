@@ -32,3 +32,8 @@ $mq-fixed-value: false;
 
 @import "framework";
 @import "core";
+
+.cms-page-view .std p {
+  font-style: normal;
+  line-height: 31px;
+}

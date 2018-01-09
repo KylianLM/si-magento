@@ -507,7 +507,7 @@ select,
 table,
 textarea {
   font-family: "Yanone Kaffeesatz", sans-serif, Verdana, Arial, sans-serif;
-  color: #636363;
+  color: #050F25;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -553,7 +553,7 @@ h1, .h1 {
 h2, .h2 {
   margin: 0;
   margin-bottom: 0.5em;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -566,7 +566,7 @@ h2, .h2 {
 h3, .h3 {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -579,7 +579,7 @@ h3, .h3 {
 h4, .h4 {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -592,7 +592,7 @@ h4, .h4 {
 h5, .h5 {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, Verdana, Arial, sans-serif;
   font-size: 13px;
   font-weight: bold;
@@ -605,7 +605,7 @@ h5, .h5 {
 h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -656,7 +656,7 @@ h6, .h6 {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 600;
-  color: #636363;
+  color: #050F25;
   border-bottom: 1px solid #EDEDED;
   padding-bottom: 3px;
   margin-bottom: 15px;
@@ -686,7 +686,7 @@ h6, .h6 {
 .block-title strong {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -694,7 +694,7 @@ h6, .h6 {
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  color: #3399CC;
+  color: #050F25;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -766,7 +766,7 @@ body:not(.customer-account) .block:first-child .block-title {
   .sidebar .block:not(.block-layered-nav) .block-title > strong {
     margin: 0;
     margin-bottom: 10px;
-    color: #636363;
+    color: #050F25;
     font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -812,7 +812,7 @@ body:not(.customer-account) .block:first-child .block-title {
   .sidebar .block:not(.block-layered-nav) .block-title.active > strong {
     margin: 0;
     margin-bottom: 10px;
-    color: #636363;
+    color: #050F25;
     font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -883,7 +883,7 @@ body:not(.customer-account) .block:first-child .block-title {
 }
 .block-account li a,
 .block-cms-menu li a {
-  color: #636363;
+  color: #050F25;
 }
 .block-account li a:hover,
 .block-cms-menu li a:hover {
@@ -899,7 +899,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .sidebar .actions .button,
 .button.button-secondary {
   background: #DDDDDD;
-  color: #636363;
+  color: #050F25;
   padding: 7px 15px;
 }
 .cart .buttons-set .button:hover,
@@ -914,13 +914,13 @@ body:not(.customer-account) .block:first-child .block-title {
 .sidebar .actions .button:active,
 .button.button-secondary:active {
   background: #c4c4c4;
-  color: #636363;
+  color: #050F25;
 }
 .cart .buttons-set .button:focus,
 .cart-table .button:focus,
 .sidebar .actions .button:focus,
 .button.button-secondary:focus {
-  color: #636363;
+  color: #050F25;
   background: #c4c4c4;
   outline: none;
 }
@@ -1166,7 +1166,7 @@ a.button:hover {
 
 .breadcrumbs a {
   float: left;
-  color: #636363;
+  color: #050F25;
 }
 
 .breadcrumbs a:hover {
@@ -1174,7 +1174,7 @@ a.button:hover {
 }
 
 .breadcrumbs strong {
-  color: #636363;
+  color: #050F25;
   font-weight: normal;
 }
 
@@ -1547,7 +1547,7 @@ a.button:hover {
  * Promotional Message Banner
  */
 .promo-msg {
-  color: #3399CC;
+  color: #050F25;
   text-align: center;
   margin: 10px;
   text-transform: uppercase;
@@ -1777,7 +1777,7 @@ a.button:hover {
 }
 
 .price-box .price {
-  color: #3399CC;
+  color: #050F25;
   font-size: 16px;
 }
 
@@ -1794,7 +1794,7 @@ a.button:hover {
 
 .price-box .minimal-price-link {
   padding-left: 1em;
-  color: #3399CC;
+  color: #050F25;
   display: block;
   /* We want this to show on its own line, otherwise the layout looks funky */
 }
@@ -1824,7 +1824,7 @@ a.button:hover {
 }
 
 .price-box .special-price {
-  color: #3399CC;
+  color: #050F25;
   padding-left: 1em;
 }
 .price-box .special-price .price-label {
@@ -2115,7 +2115,7 @@ span.weee {
 .toolbar,
 .pager {
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
-  color: #636363;
+  color: #050F25;
   line-height: 30px;
   font-size: 12px;
 }
@@ -2248,7 +2248,7 @@ span.weee {
 
 .pages .current,
 .pages .current:hover {
-  color: #636363;
+  color: #050F25;
   border: 1px solid #CCCCCC;
   width: 30px;
   background-color: #FFFFFF;
@@ -2530,7 +2530,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 form .legend {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -2811,7 +2811,7 @@ p.required,
 #checkout-shipping-method-load .sp-methods dd label,
 #co-shipping-method-form .sp-methods dd label,
 .product-options ul.options-list label {
-  color: #636363;
+  color: #050F25;
   background-color: #F4F4F4;
   padding: 5px 10px;
   display: inline-block;
@@ -3311,7 +3311,7 @@ body {
   width: 20%;
   height: 44px;
   background: #FFFFFF;
-  color: #636363;
+  color: #050F25;
   line-height: 42px;
   text-align: center;
 }
@@ -3404,7 +3404,7 @@ a.skip-link {
     padding: 0 15px 0 25px;
     border-bottom: 1px solid #CCCCCC;
     text-align: left;
-    color: #636363;
+    color: #050F25;
     text-transform: uppercase;
     line-height: 30px;
   }
@@ -3493,7 +3493,7 @@ a.skip-link {
   text-decoration: none;
   position: relative;
   display: block;
-  color: #636363;
+  color: #050F25;
   line-height: 30px;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
 }
@@ -3767,7 +3767,7 @@ a.skip-link {
   #header-account a {
     display: block;
     padding: 5px 10px;
-    color: #636363;
+    color: #050F25;
     line-height: 2;
   }
 
@@ -4003,7 +4003,7 @@ a.skip-link {
 }
 .footer .block-title,
 .footer address {
-  color: #3399CC;
+  color: #050F25;
 }
 .footer .links {
   float: left;
@@ -4017,7 +4017,7 @@ a.skip-link {
   padding: 4px 0;
 }
 .footer .links a {
-  color: #636363;
+  color: #050F25;
 }
 .footer .links a:hover {
   color: #3399CC;
@@ -4206,7 +4206,7 @@ h5.product-name,
 p.product-name {
   margin: 0;
   margin-bottom: 0.5em;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -4224,7 +4224,7 @@ h3.product-name a,
 h4.product-name a,
 h5.product-name a,
 p.product-name a {
-  color: #636363;
+  color: #050F25;
 }
 h2.product-name a:hover,
 h3.product-name a:hover,
@@ -4662,7 +4662,7 @@ p.product-name a:hover {
   display: none;
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -4709,7 +4709,7 @@ p.product-name a:hover {
 .block-layered-nav .block-content > dl > dt {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -4892,7 +4892,7 @@ p.product-name a:hover {
   }
 
   .block-layered-nav dl ol > li > a {
-    color: #636363;
+    color: #050F25;
     background-color: #F4F4F4;
     padding: 5px 10px;
   }
@@ -4905,7 +4905,7 @@ p.product-name a:hover {
   display: block;
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -5020,7 +5020,7 @@ p.product-name a:hover {
   text-transform: uppercase;
 }
 .product-view .product-shop .price-box .special-price span.weee {
-  color: #636363;
+  color: #050F25;
 }
 .product-view .product-shop .price-box .special-price span.weee span.price {
   font-size: 16px;
@@ -5029,7 +5029,7 @@ p.product-name a:hover {
 .product-view .product-shop .price-box .price-including-tax {
   display: block;
   line-height: 1.2;
-  color: #636363;
+  color: #050F25;
 }
 .product-view .product-shop .price-box .price-excluding-tax .label,
 .product-view .product-shop .price-box .price-including-tax .label {
@@ -5439,7 +5439,7 @@ p.product-name a:hover {
   .product-collateral > dl > dt {
     margin: 0;
     margin-bottom: 10px;
-    color: #636363;
+    color: #050F25;
     font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -5767,7 +5767,7 @@ p.product-name a:hover {
   padding: 0 0 10px;
   border: 0;
   background: 0;
-  color: #636363;
+  color: #050F25;
 }
 @media only screen and (max-width: 1199px) {
   .product-options-bottom .product-pricing,
@@ -5788,7 +5788,7 @@ p.product-name a:hover {
 
 .product-options-bottom .tier-prices .price,
 .product-options-bottom .tier-prices .benefit {
-  color: #636363;
+  color: #050F25;
 }
 
 /* "display: none" should be removed if products on site have a long list of product options and those product options */
@@ -5825,7 +5825,7 @@ p.product-name a:hover {
 .block-related .block-title h2 {
   margin: 0;
   margin-bottom: 0.5em;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -6321,7 +6321,7 @@ p.product-name a:hover {
   vertical-align: top;
 }
 .cart-table h2 {
-  color: #636363;
+  color: #050F25;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0;
@@ -6397,7 +6397,7 @@ p.product-name a:hover {
   display: block;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-right: 6px solid #3399CC;
+  border-right: 6px solid #050F25;
   border-left: none;
   position: absolute;
   top: 3px;
@@ -6411,7 +6411,7 @@ p.product-name a:hover {
   display: block;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
-  border-top: 6px solid #3399CC;
+  border-top: 6px solid #050F25;
   border-bottom: none;
   right: -15px;
   top: 6px;
@@ -6980,7 +6980,7 @@ p.product-name a:hover {
 
 .opc .section.allow .step-title:hover h2,
 .opc .section.active .step-title h2 {
-  color: #3399CC;
+  color: #050F25;
 }
 
 .opc .section .step-title h2 {
@@ -7199,7 +7199,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding-top: 6px;
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -7213,7 +7213,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   color: #A0A0A0;
 }
 .block-progress dt.complete {
-  color: #636363;
+  color: #050F25;
 }
 .block-progress dd {
   padding-left: 15px;
@@ -7466,7 +7466,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   border-radius: 3px;
   font-size: 14px;
   text-align: center;
-  color: #636363;
+  color: #050F25;
   text-decoration: none;
   box-sizing: content-box;
 }
@@ -7657,7 +7657,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .product-view .product-options .swatch-attr .select-label {
   display: inline;
   font-weight: normal;
-  color: #3399CC;
+  color: #050F25;
   padding-left: 5px;
 }
 .product-view .product-options dd .input-box {
@@ -8544,7 +8544,7 @@ div.paypal-logo span > img {
   text-transform: uppercase;
 }
 #customer-reviews h2 span {
-  color: #636363;
+  color: #050F25;
 }
 #customer-reviews h3 {
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
@@ -9082,7 +9082,7 @@ div.paypal-logo span > img {
   font-size: 12px;
 }
 #wishlist-table .price-box .price {
-  color: #636363;
+  color: #050F25;
 }
 #wishlist-table .giftregisty-add {
   margin-top: 5px;
@@ -9326,7 +9326,7 @@ div.paypal-logo span > img {
   width: 40px;
   float: right;
   display: block;
-  color: #636363;
+  color: #050F25;
   text-decoration: none;
   font-weight: normal;
   font-size: 30px;
@@ -9364,7 +9364,7 @@ div.paypal-logo span > img {
   padding-right: 10px;
 }
 .header-minicart .info-wrapper td {
-  color: #3399CC;
+  color: #050F25;
   clear: right;
 }
 .header-minicart .info-wrapper .qty-wrapper td {
@@ -9406,7 +9406,7 @@ div.paypal-logo span > img {
   text-transform: uppercase;
 }
 .header-minicart .subtotal .price {
-  color: #3399CC;
+  color: #050F25;
 }
 .header-minicart .minicart-actions {
   padding: 10px;
@@ -9460,7 +9460,7 @@ div.paypal-logo span > img {
 }
 @media only screen and (max-width: 770px) {
   .header-minicart .subtotal .label {
-    color: #636363;
+    color: #050F25;
   }
   .header-minicart .minicart-wrapper:before {
     background-color: #EDEDED;
@@ -9691,11 +9691,11 @@ div.paypal-logo span > img {
 }
 .cms-page-view .std h1,
 .cms-no-route .std h1 {
-  color: #3399CC;
+  color: #050F25;
 }
 .cms-page-view .std h2,
 .cms-no-route .std h2 {
-  color: #3399CC;
+  color: #050F25;
 }
 .cms-page-view .std li,
 .cms-no-route .std li {
@@ -9741,7 +9741,7 @@ div.paypal-logo span > img {
 #accordion > dl > dt {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #050F25;
   font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -11208,4 +11208,159 @@ a:hover {
   text-align: left !important;
   font-size: 22px;
   margin-top: 28px;
+}
+
+.cms-page-view .about_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cms-page-view .about_container h2 {
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  margin-bottom: 33px;
+}
+.cms-page-view .about_container .about_content {
+  width: 50%;
+}
+@media screen and (max-width: 1040px) {
+  .cms-page-view .about_container .about_content {
+    width: 100%;
+  }
+}
+.cms-page-view .about_container .gold_subtitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #937845;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 14px;
+  margin-bottom: 47px;
+  padding-bottom: 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+.cms-page-view .about_container .gold_subtitle:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #937845;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+.cms-page-view .about_container .about_left-media {
+  background: no-repeat url(../images/media/about-left.jpg) center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 4 / 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .cms-page-view .about_container .about_left-media {
+    background: no-repeat url(../images/media/about-left@2x.jpg) center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+.cms-page-view .about_container .about_brand {
+  padding: 150px 180px 50px 117px;
+}
+.cms-page-view .about_container .about_fashion-creator {
+  padding: 130px 32px 80px 160px;
+  margin-bottom: 100px;
+}
+.cms-page-view .about_container .about_right-media {
+  display: flex;
+  padding: 168px 80px 0 117px;
+}
+.cms-page-view .about_container .about_right-media .fashion-creator_bg {
+  background: no-repeat url(../images/media/fashion-creator.jpg) center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 4 / 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .cms-page-view .about_container .about_right-media .fashion-creator_bg {
+    background: no-repeat url(../images/media/fashion-creator@2x.jpg) center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+.cms-page-view .about_container .quotation {
+  font-family: "Playfair Display", sans-serif;
+  width: 70%;
+}
+.cms-page-view .about_container .quotation .quotation_text {
+  margin: 20px 0;
+}
+.cms-page-view .about_container .quotation p {
+  margin-bottom: 0;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content {
+  padding-right: 55px;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content .quotation_icons {
+  font-size: 100px;
+  font-style: normal;
+  line-height: 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 20px 0;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content .quotation_icons span {
+  position: absolute;
+  bottom: 0;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content:first-child span {
+  color: #937845;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content:first-child .quotation_icons:after {
+  content: '';
+  width: 80%;
+  height: 1px;
+  background-color: #E9E9E9;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content:last-child span {
+  color: #E9E9E9;
+  right: 0;
+}
+.cms-page-view .about_container .quotation .quotation_icons_content:last-child p.quotation_icons:before {
+  content: '';
+  width: 80%;
+  height: 1px;
+  background-color: #E9E9E9;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.cms-page-view .about_container .quotation p {
+  font-size: 32px;
+  font-style: italic;
+  line-height: 50px;
+}
+@media screen and (max-width: 1040px) {
+  .cms-page-view .about_container .about_content:not(.about_right-media) {
+    padding: 20px;
+  }
+  .cms-page-view .about_container .about_right-media {
+    padding: 0;
+  }
+  .cms-page-view .about_container .about_fashion-creator {
+    margin-bottom: 0;
+  }
+  .cms-page-view .about_container .about_right-media .fashion-creator_bg {
+    height: 100%;
+  }
+  .cms-page-view .about_container .about_left-media, .cms-page-view .about_container .about_right-media {
+    height: 200px;
+  }
+}
+
+.cms-page-view .std p {
+  font-style: normal;
+  line-height: 31px;
 }
