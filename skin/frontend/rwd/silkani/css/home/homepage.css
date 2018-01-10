@@ -3,7 +3,7 @@
 }
 .home-wrapper .landing-section {
   width: 100%;
-  height: calc(100vh - 21px);
+  height: 100vh;
   background-color: #050F25;
   position: relative;
   background: url("../images/media/home-bg.jpg") no-repeat center center;
