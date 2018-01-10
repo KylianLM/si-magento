@@ -71,7 +71,7 @@
                         <?php echo $this->getTierPriceHtml() ?>
                     </div>
 
-                   <!-- <div class="extra-info">
+                    <!--<div class="extra-info">
                         <?php /*echo $this->getReviewsSummaryHtml($_product, 'default', false)*/?>
                         <?php /*echo $this->getChildHtml('product_type_availability'); */?>
                     </div>-->
@@ -84,10 +84,14 @@
                         </div>
                     <?php endif;?>
 
-                    <div class="laundromat-info">
+                    <!--<div class="laundromat-info">
                         <p>Prendre soin de sa chemise</p>
                         <p>ici les images</p>
-                    </div>
+                    </div>-->
+
+                    <!--<div id="product-options-collapse-btn" onclick="collapseOptions()">
+                        <span>YOLO</span>
+                    </div>-->
 
                     <?php echo $this->getChildHtml('other');?>
 
@@ -188,7 +192,7 @@
         </script>
     </div>
 
-   <!-- <div class="product-collateral toggle-content tabs">
+    <!--<div class="product-collateral toggle-content tabs">
         <?php /*if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):*/?>
             <dl id="collateral-tabs" class="collateral-tabs">
                 <?php /*foreach ($detailedInfoGroup as $alias => $html):*/?>
@@ -199,9 +203,9 @@
                 <?php /*endforeach;*/?>
             </dl>
         <?php /*endif; */?>
-    </div>-->
+    </div>
 
     <?php /*echo $this->getChildHtml('upsell_products') */?>
-    <?php /*echo $this->getChildHtml('product_additional_data') */?>
+    --><?php /*echo $this->getChildHtml('product_additional_data') */?>
 
 </div>
