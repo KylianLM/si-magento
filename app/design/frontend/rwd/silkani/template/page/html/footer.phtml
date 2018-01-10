@@ -24,7 +24,7 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="footer-container">
+<!--<div class="footer-container">
     <!--   <div class="footer">
         <?php /*echo $this->getChildHtml() */ ?>
           <address class="copyright">
@@ -32,7 +32,7 @@
           </address>
     </div>-->
 
-</div>
+<!--</div> -->
 
 <div class="footer">
     <div>
@@ -58,3 +58,14 @@
         <div style="width: 330px"></div>
     </div>
 </div>
+
+<script>
+    var f = document.querySelector('.footer');
+    if (window.location.pathname == "/blog") {
+        f.style.display = 'none';
+    }
+
+    if (window.location.href.indexOf('/index.php/blog') != -1) {
+        f.style.display = 'none';
+    }
+</script>

@@ -24,17 +24,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      &:nth-child(1){
+      &:nth-child(1) {
 
         .block-picture {
 
-          &:nth-child(1){
+          &:nth-child(1) {
 
             background: url('../images/media/1.png') no-repeat center center;
             background-size: cover;
           }
 
-          &:nth-child(2){
+          &:nth-child(2) {
 
             background: url('../images/media/2.png') no-repeat center center;
             background-size: cover;
@@ -42,17 +42,17 @@
         }
 
       }
-      &:nth-child(2){
+      &:nth-child(2) {
 
         .block-picture {
 
-          &:nth-child(1){
+          &:nth-child(1) {
 
             background: url('../images/media/3.png') no-repeat center center;
             background-size: cover;
           }
 
-          &:nth-child(2){
+          &:nth-child(2) {
 
             background: url('../images/media/4.png') no-repeat center center;
             background-size: cover;
@@ -60,17 +60,17 @@
         }
 
       }
-      &:nth-child(3){
+      &:nth-child(3) {
 
         .block-picture {
 
-          &:nth-child(1){
+          &:nth-child(1) {
 
             background: url('../images/media/5.png') no-repeat center center;
             background-size: cover;
           }
 
-          &:nth-child(2){
+          &:nth-child(2) {
 
             background: url('../images/media/6.png') no-repeat center center;
             background-size: cover;
@@ -81,7 +81,7 @@
 
       .block-picture {
         position: relative;
-        width: 180px;
+        width: calc(calc(100% / 2) - 20px);
         height: 180px;
         margin: 10px;
 
@@ -97,7 +97,6 @@
           z-index: 2;
           background-color: #050F25;
           transition: all 350ms ease-in-out;
-
 
           .insta-link {
             width: 100%;

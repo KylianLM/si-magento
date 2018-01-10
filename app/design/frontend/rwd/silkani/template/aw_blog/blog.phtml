@@ -13,7 +13,7 @@
     $post = $posts->getFirstItem();
     ?>
     <div class="blog__child blog__featured"
-         style="background-image: url(http://source.unsplash.com/random/)">
+         style="background-image: url(<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getLargeImage() ?>">
         <h2 class="blog__title title title--white">Hoop Earrings A Style From History</h2>
         <div class="content">
             <h3 class="author">de Claudia carvalho</h3>
@@ -23,14 +23,16 @@
         </div>
         <ul class="social">
             <li>
-                <a href="https://www.instagram.com/silkaniparis/"><img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'instagram.png' ?>"
-                                                                       srcset="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'instagram@2x.png' ?> 2x"
-                                                                       alt=""></a>
+                <a href="https://www.instagram.com/silkaniparis/"><img
+                            src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'instagram.png' ?>"
+                            srcset="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'instagram@2x.png' ?> 2x"
+                            alt=""></a>
             </li>
             <li>
-                <a href="https://www.facebook.com/Silkani-697830700328676/"><img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'fb.png' ?>"
-                                                                                 srcset="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'fb@2x.png' ?> 2x"
-                                                                                 alt=""></a>
+                <a href="https://www.facebook.com/Silkani-697830700328676/"><img
+                            src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'fb.png' ?>"
+                            srcset="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'fb@2x.png' ?> 2x"
+                            alt=""></a>
             </li>
         </ul>
     </div>
@@ -47,7 +49,8 @@
                 <li class="blog__item">
                     <div class="blog__item__img">
                         <a href="<?= $this->getBaseUrl().'blog/'.$post->getIdentifier(); ?>">
-                            <img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getFeaturedImage() ?>" alt="">
+                            <img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getFeaturedImage() ?>"
+                                 alt="">
                         </a>
                     </div>
                     <div class="blog__item__content">

@@ -22,24 +22,16 @@
 // @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
-
 // ==============================================
 // Core Application
 // ==============================================
-
 // ----------------------------------------------
 // Browser Resets
-
 @import "vendor/normalize";
 @import "core/reset";
 
 * {
   box-sizing: border-box;
-}
-
-*::selection, *::-moz-selection {
-  color: #fff;
-  background: #1E1E1E;
 }
 
 // ----------------------------------------------
@@ -118,3 +110,13 @@
 @import "components/footer";
 @import "components/button";
 @import "content/about";
+
+::selection {
+  color: #fff !important;
+  background: #1E1E1E !important;
+}
+
+::-moz-selection {
+  color: #fff !important;
+  background: #1E1E1E !important;
+}

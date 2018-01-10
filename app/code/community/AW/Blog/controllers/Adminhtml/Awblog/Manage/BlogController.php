@@ -126,6 +126,32 @@ class AW_Blog_Adminhtml_Awblog_Manage_BlogController extends Mage_Adminhtml_Cont
     {
         if ($data = $this->getRequest()->getPost()) {
             $model = Mage::getModel('blog/post');
+            if(isset($_FILES['large_image']['name']) and (file_exists($_FILES['large_image']['tmp_name']))) {
+                try {
+                    $uploader = new Varien_File_Uploader('large_image');
+                    $uploader->setAllowedExtensions(array('jpg','jpeg','gif','png'));
+                    $uploader->setAllowRenameFiles(false);
+                    $uploader->setFilesDispersion(false);
+                    $path = Mage::getBaseDir('media') . DS ;
+
+
+                    $filename = preg_replace('/[^a-z0-9\.]/', '', strtolower($_FILES['large_image']['name']));
+
+                    $uploader->save($path, $filename);
+
+                    $data['large_image'] = $filename;
+                }catch(Exception $e) {
+
+                }
+            }
+
+// handle delete image
+            else {
+                if(isset($data['large_image']['delete']) && $data['large_image']['delete'] == 1)
+                    $data['image_main'] = '';
+                else
+                    unset($data['large_image']);
+            }
 
             if (isset($_FILES['featured_image']['name']) and (file_exists($_FILES['featured_image']['tmp_name']))) {
                 try {

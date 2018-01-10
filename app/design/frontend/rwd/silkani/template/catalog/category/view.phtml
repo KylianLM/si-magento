@@ -1,487 +1,103 @@
+<?php
+$_helper = $this->helper('catalog/output');
+$category_id = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
+$_category = Mage::getModel('catalog/category')->load($category_id);
+$_imgSize = 300;
+?>
 <section class="category-section">
     <div class="category-wrapper">
-      <h2 class="title-1">
-          Collection Vivienne
-      </h2>
-      <div class="select-style">
-          <select>
-              <option value="Trier par Couleur">Trier par Couleur</option>
-              <option value="Rouge">Rouge</option>
-              <option value="Bleu">Bleu</option>
-              <option value="Orange">Orange</option>
-              <option value="Gris">Gris</option>
-              <option value="Noir">Noir</option>
-              <option value="Blanc">Blanc</option>
-          </select>
-      </div>
-      <div class="search-bar">
-        <input type="text" class="search" placeholder="Rechercher">
-      </div>
+        <h2 class="title-1">
+            Collection Vivienne
+        </h2>
+        <div class="select-style">
+            <select>
+                <option value="Trier par Couleur">Trier par Couleur</option>
+                <option value="Rouge">Rouge</option>
+                <option value="Bleu">Bleu</option>
+                <option value="Orange">Orange</option>
+                <option value="Gris">Gris</option>
+                <option value="Noir">Noir</option>
+                <option value="Blanc">Blanc</option>
+            </select>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search" placeholder="Rechercher">
+        </div>
 
-      <div class="category-list">
-        <ul class="category-items" >
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
-          <li class="category-item">
-            <div class="item-background">
-              <div class="item-background-hover">
-                <div class="block-size">
-                  <h3 class="title-3">
-                    Bleu Nuit
-                  </h3>
-                  <span class="price">
-                    190 €
-                  </span>
-                  <h4 class="title-4">
-                    tailles disponible
-                  </h4>
-                  <ul class="sizes">
-                    <li class="size">
-                      32
-                    </li>
-                    <li class="size">
-                      34
-                    </li>
-                    <li class="size error">
-                      36
-                    </li>
-                    <li class="size">
-                      38
-                    </li>
-                    <li class="size error">
-                      40
-                    </li>
-                    <li class="size">
-                      42
-                    </li>
-                    <li class="size">
-                      44
-                    </li>
-                  </ul>
-                  <p class="confidence">
-                    Soie fabriqué en France
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item-price">
-              <span class="color">
-                Ivoire -
-              </span>
-              <span class="price">
-                1000€
-              </span>
-            </div>
-          </li>
+        <div class="category-list">
+            <?php
+            // Get alls product of current category
+            $products = Mage::getModel('catalog/product')
+                ->getCollection()
+                ->addAttributeToSelect('*')
+                ->addCategoryFilter($_category)
+                ->load();
+            ?>
+            <ul class="category-items">
+                <?php
+                foreach ($products as $product):
+                    $img = Mage::helper('catalog/image')->init($product, 'image');
+                    ?>
+                    <li class="category-item">
+                        <a href="<?= $product->getProductUrl() ?>">
+                            <div class="item-background" style="background-image: url(<?= $img ?>)">
+                                <div class="item-background-hover">
+                                    <div class="block-size">
+                                        <h3 class="title-3">
+                                            <?= $product->getName() ?>
+                                        </h3>
+                                        <span class="price" style='color: #050F25;font-family: "Playfair Display";font-size: 18px;font-weight: bold;letter-spacing: 5px;line-height: 24px;text-align: center;
+                                        '>
+                                        <?= (int)$product->getPrice() ?>€
+                                    </span>
+                                        <h4 class="title-4">
+                                            tailles disponible
+                                        </h4>
+                                        <ul class="sizes">
+                                            <li class="size">
+                                                32
+                                            </li>
+                                            <li class="size">
+                                                34
+                                            </li>
+                                            <li class="size error">
+                                                36
+                                            </li>
+                                            <li class="size">
+                                                38
+                                            </li>
+                                            <li class="size error">
+                                                40
+                                            </li>
+                                            <li class="size">
+                                                42
+                                            </li>
+                                            <li class="size">
+                                                44
+                                            </li>
+                                        </ul>
+                                        <p class="confidence">
+                                            Soie fabriqué en France
+                                        </p>
+                                    </div>
+                                </div>
 
-        </ul>
+                            </div>
+                        </a>
+                        <div class="item-price">
+              <span class="color">
+                <?= $product->getName() ?> -
+              </span>
+                            <span class="price">
+               <?= (int)$product->getPrice() ?>€
+              </span>
+                        </div>
+                    </li>
+                    <?php
+                endforeach;
+                ?>
+            </ul>
 
-      </div>
+        </div>
     </div>
 </section>
