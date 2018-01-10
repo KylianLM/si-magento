@@ -72,13 +72,12 @@
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
+
       .block-left,.block-right {
         width: calc(50% - 10px);
-        height: 40vw;
+        height: 50vw;
         position: relative;
         z-index: 1;
-        background: url('https://source.unsplash.com/random') no-repeat center center;
-        background-size: cover;
 
         .title-2 {
           width: 100%;
@@ -144,6 +143,7 @@
               font-size: 14px;
               line-height: 19px;
               color: #FFFFFF;
+              font-style: italic;
             }
 
             .button {
@@ -178,13 +178,34 @@
       }
 
       .block-left {
-        background-color: lightcoral;
         margin-right: 10px;
+        background: url('../images/media/collection-01.jpg') no-repeat center center;
+        background-size: cover;
       }
       .block-right {
         margin-left: 10px;
-        background-color: lightblue;
+        background: url('../images/media/collection-02.jpg') no-repeat center center;
+        background-size: cover;
       }
     }
   }
+}
+
+@media screen and (max-width: 860px) {
+ .home-wrapper {
+   .collection-section {
+     .block-wrapper {
+        flex-direction: column;
+        align-items: center;
+       .block-left,.block-right {
+         margin: 0;
+         width: 80%;
+         height: 80vw;
+       }
+       .block-right {
+         margin-top: 20px;
+       }
+     }
+   }
+ }
 }

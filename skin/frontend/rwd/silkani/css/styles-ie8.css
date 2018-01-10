@@ -8666,11 +8666,9 @@ div.calendar table td.button {
 }
 .home-wrapper .collection-section .block-wrapper .block-left, .home-wrapper .collection-section .block-wrapper .block-right {
   width: calc(50% - 10px);
-  height: 40vw;
+  height: 50vw;
   position: relative;
   z-index: 1;
-  background: url("https://source.unsplash.com/random") no-repeat center center;
-  background-size: cover;
 }
 .home-wrapper .collection-section .block-wrapper .block-left .title-2, .home-wrapper .collection-section .block-wrapper .block-right .title-2 {
   width: 100%;
@@ -8728,6 +8726,7 @@ div.calendar table td.button {
   font-size: 14px;
   line-height: 19px;
   color: #FFFFFF;
+  font-style: italic;
 }
 .home-wrapper .collection-section .block-wrapper .block-left .block-hover .block-text .button, .home-wrapper .collection-section .block-wrapper .block-right .block-hover .block-text .button {
   width: 215px;
@@ -8754,16 +8753,34 @@ div.calendar table td.button {
   color: #C8A460;
 }
 .home-wrapper .collection-section .block-wrapper .block-left {
-  background-color: lightcoral;
   margin-right: 10px;
+  background: url("../images/media/collection-01.jpg") no-repeat center center;
+  background-size: cover;
 }
 .home-wrapper .collection-section .block-wrapper .block-right {
   margin-left: 10px;
-  background-color: lightblue;
+  background: url("../images/media/collection-02.jpg") no-repeat center center;
+  background-size: cover;
 }
 
+@media screen and (max-width: 860px) {
+  .home-wrapper .collection-section .block-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-wrapper .collection-section .block-wrapper .block-left, .home-wrapper .collection-section .block-wrapper .block-right {
+    margin: 0;
+    width: 80%;
+    height: 80vw;
+  }
+  .home-wrapper .collection-section .block-wrapper .block-right {
+    margin-top: 20px;
+  }
+}
 .instagram-section {
   position: relative;
+  height: auto;
+  padding-top: 100px;
 }
 .instagram-section .title {
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -8783,7 +8800,6 @@ div.calendar table td.button {
 }
 .instagram-section .instagram-wrapper .row {
   width: 33%;
-  height: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

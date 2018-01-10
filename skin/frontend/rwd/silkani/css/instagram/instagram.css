@@ -1,5 +1,7 @@
 .instagram-section {
   position: relative;
+  height: auto;
+  padding-top: 100px;
 }
 .instagram-section .title {
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -19,7 +21,6 @@
 }
 .instagram-section .instagram-wrapper .row {
   width: 33%;
-  height: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
