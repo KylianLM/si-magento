@@ -28,6 +28,7 @@
 
         img {
           height: 100%;
+          max-height: none;
           width: 100%;
           object-fit: cover;
         }
@@ -36,9 +37,27 @@
   }
 
   .product-shop {
-    padding: 117px;
+    padding: 60px 117px;
     font-family: "Playfair Display", sans-serif;
     line-height: 28px;
+
+    input, select {
+      width: 100%;
+      text-align: left;
+      font-size: 14px;
+      line-height: 14px;
+      margin: 5px 0;
+      height: 50px;
+      border-radius: 2px !important;
+      background-color: transparent;
+      padding: 0 20px;
+      color: $c-text;
+      border: 1px solid $c-input-border;
+    }
+
+    select {
+      -webkit-appearance: button;
+    }
 
     .product-name {
       float: none;
@@ -62,7 +81,7 @@
       }
 
       .regular-price .price {
-        font-family: "Playfair Display", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 22px;
         letter-spacing: 5px;
         line-height: 30px;
@@ -71,19 +90,73 @@
     }
 
     .description {
-      padding: 30px 0;
+      padding: 30px 0 20px;
     }
 
-    .add-to-cart-wrapper {
-      width: auto;
-      
-      .button {
-        height: 60px;
-        background-color: $c-text;
+    .laundromat-info {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+    }
+
+    .product-options, .product-options-bottom {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
+
+    .product-options {
+      .last {
+        padding: 0;
+      }
+
+      dd {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+
+      p.required {
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        position: relative;
+        color: $c-text;
+        font-size: 12px;
+        right: 0;
+        top: 0;
+        text-align: left;
+      }
+    }
+
+    .product-options-bottom {
+      .add-to-cart {
+        border: none;
+      }
+
+      .qty-wrapper {
+        float: none;
+        margin-right: 0;
+
+        .qty {
+          height: 50px;
+        }
+      }
+
+      .add-to-cart-buttons {
         width: 100%;
-        font-size: 18px;
-        letter-spacing: 1px;
-        line-height: 18px;
+        float: none;
+
+        .button {
+          height: 60px;
+          margin-top: 5px;
+          background-color: $c-text;
+          width: 100%;
+          font-size: 18px;
+          letter-spacing: 1px;
+          line-height: 18px;
+        }
       }
     }
   }

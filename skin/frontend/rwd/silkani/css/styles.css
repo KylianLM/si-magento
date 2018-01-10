@@ -2613,7 +2613,7 @@ select + select {
 
 select[multiple] {
   width: 270px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   font-size: 15px;
   padding: 5px;
 }
@@ -2639,7 +2639,7 @@ textarea {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   background: #FFFFFF;
   font-size: 15px;
 }
@@ -2706,11 +2706,11 @@ input[type=text].qty {
  * Placeholder
  */
 ::-webkit-input-placeholder {
-  color: #A0A0A0;
+  color: #050F25;
 }
 
 input:-moz-placeholder {
-  color: #A0A0A0;
+  color: #050F25;
 }
 
 /* -------------------------------------------- *
@@ -2906,7 +2906,7 @@ form .form-instructions {
 
 .data-table thead th,
 .data-table tbody td {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
 }
 
 .data-table tbody td,
@@ -2930,7 +2930,7 @@ form .form-instructions {
  * Generic Info Table
  * ============================================ */
 .info-box {
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   padding: 12px 15px;
   margin: 0 0 15px;
 }
@@ -2958,11 +2958,11 @@ form .form-instructions {
  * ============================================ */
 .zebra-table tr:first-child,
 .zebra-table th:first-child {
-  border-top: 1px solid #C0C0C0;
+  border-top: 1px solid #E1E1E1;
 }
 .zebra-table td,
 .zebra-table th {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
   padding: 6px;
   background-color: transparent;
 }
@@ -5567,18 +5567,18 @@ p.product-name a:hover {
 
 #product-attribute-specs-table {
   max-width: 50em;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
 }
 #product-attribute-specs-table th {
-  border-right: 1px solid #C0C0C0;
-  border-bottom: 1px solid #C0C0C0;
+  border-right: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
 }
 
 /* -------------------------------------------- *
  * Catalog - Grouped Product List
  */
 .grouped-items-table-wrapper {
-  border: solid 1px #C0C0C0;
+  border: solid 1px #E1E1E1;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -6332,7 +6332,7 @@ p.product-name a:hover {
   padding-left: 15px;
 }
 .cart-table tr {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
 }
 .cart-table tfoot tr {
   background: none;
@@ -6430,7 +6430,7 @@ p.product-name a:hover {
 }
 .cart-table .product-cart-actions .qty {
   height: 30px;
-  border-color: #C0C0C0;
+  border-color: #E1E1E1;
   border-radius: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -6611,7 +6611,7 @@ p.product-name a:hover {
   max-width: 100%;
   height: 30px;
   display: block;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
 }
 .shipping select.validation-failed {
   border-color: #DF280A;
@@ -8975,7 +8975,7 @@ div.paypal-logo span > img {
   width: 100%;
 }
 #wishlist-table.clean-table th {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
 }
 #wishlist-table.clean-table td {
   padding: 15px;
@@ -9001,7 +9001,7 @@ div.paypal-logo span > img {
   margin: 5px 0;
 }
 #wishlist-table textarea {
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   width: 100%;
   height: 45px;
   font-size: 11px;
@@ -11811,13 +11811,30 @@ a:hover {
 }
 .product-view .product-img-box .product-image .product-image-gallery img {
   height: 100%;
+  max-height: none;
   width: 100%;
   object-fit: cover;
 }
 .product-view .product-shop {
-  padding: 117px;
+  padding: 60px 117px;
   font-family: "Playfair Display", sans-serif;
   line-height: 28px;
+}
+.product-view .product-shop input, .product-view .product-shop select {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 5px 0;
+  height: 50px;
+  border-radius: 2px !important;
+  background-color: transparent;
+  padding: 0 20px;
+  color: #050F25;
+  border: 1px solid #E1E1E1;
+}
+.product-view .product-shop select {
+  -webkit-appearance: button;
 }
 .product-view .product-shop .product-name {
   float: none;
@@ -11839,20 +11856,62 @@ a:hover {
   bottom: 0;
 }
 .product-view .product-shop .price-info .regular-price .price {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 22px;
   letter-spacing: 5px;
   line-height: 30px;
   color: #050F25;
 }
 .product-view .product-shop .description {
-  padding: 30px 0;
+  padding: 30px 0 20px;
 }
-.product-view .product-shop .add-to-cart-wrapper {
-  width: auto;
+.product-view .product-shop .laundromat-info {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
 }
-.product-view .product-shop .add-to-cart-wrapper .button {
+.product-view .product-shop .product-options, .product-view .product-shop .product-options-bottom {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.product-view .product-shop .product-options .last {
+  padding: 0;
+}
+.product-view .product-shop .product-options dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.product-view .product-shop .product-options p.required {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  position: relative;
+  color: #050F25;
+  font-size: 12px;
+  right: 0;
+  top: 0;
+  text-align: left;
+}
+.product-view .product-shop .product-options-bottom .add-to-cart {
+  border: none;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper {
+  float: none;
+  margin-right: 0;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper .qty {
+  height: 50px;
+}
+.product-view .product-shop .product-options-bottom .add-to-cart-buttons {
+  width: 100%;
+  float: none;
+}
+.product-view .product-shop .product-options-bottom .add-to-cart-buttons .button {
   height: 60px;
+  margin-top: 5px;
   background-color: #050F25;
   width: 100%;
   font-size: 18px;

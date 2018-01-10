@@ -56,10 +56,14 @@
                         <h2><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h2>
                     </div>
 
-                    <div class="yolo">
+                   <!-- <div class="yolo">
+                        <?php /*echo $_helper->productAttribute($_product, $_product->getLaundromat(), 'laundromat') */?>
                         yolo
-                        <?php echo $this->getAttribute('laundromat2') ?>
-                    </div>
+                        <img src="<?php /*echo $_helper->productAttribute($_product, $_product->getLaundromat(), 'laundromat') */?>" alt="">
+                        yolo2
+                        <img src="<?php /*echo $this->helper('catalog/image')->init($this->getProduct(), 'laundromat', $_image->getFile())->resize(35); */?>"
+                             width="45" height="45" alt="<?php /*echo $this->escapeHtml($_image->getLabel()) */?>" />
+                    </div>-->
 
                     <div class="price-info">
                         <?php echo $this->getPriceHtml($_product); ?>
@@ -79,6 +83,11 @@
                             <div class="std"><?php echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?></div>
                         </div>
                     <?php endif;?>
+
+                    <div class="laundromat-info">
+                        <p>Prendre soin de sa chemise</p>
+                        <p>ici les images</p>
+                    </div>
 
                     <?php echo $this->getChildHtml('other');?>
 
