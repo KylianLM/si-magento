@@ -64,9 +64,9 @@
     var quantity = 0;
     const qtyElement = document.getElementById('qty-input');
     const qtyValue = qtyElement.getAttribute("value");
-    /*const productOptions = document.getElementById('product-options-wrapper');
-    const productOptionsBottom = document.getElementsByClassName('product-options-bottom')[0];
-    const collapseButton = document.getElementById('product-options-collapse-btn');*/
+    const shortDescriptionContent = document.getElementById('short-description_content');
+    const descriptionContent = document.getElementById('description_content');
+    const descriptionArrow = document.getElementById('product-description_show-arrow');
 
     function addQuantity() {
         quantity ++;
@@ -82,15 +82,15 @@
         return qtyElement.setAttribute("value", (Number(qtyValue) + Number(quantity)).toString());
     }
 
-    /*function collapseOptions() {
-        if(productOptions.getAttribute("class") === "product-options") {
-            console.log("dispa");
-            productOptions.setAttribute("class", "product-options collapse");
-        } else if(productOptions.getAttribute("class") === "product-options collapse") {
-            console.log("apparitioon");
-            productOptions.setAttribute("class", "product-options");
+    function showDescription() {
+        if(shortDescriptionContent.getAttribute("class") === "std") {
+            shortDescriptionContent.setAttribute("class", "std show-content");
+            descriptionContent.setAttribute("class", "std");
+            descriptionArrow.setAttribute("class","");
+        } else if(shortDescriptionContent.getAttribute("class") === "std show-content") {
+            shortDescriptionContent.setAttribute("class", "std");
+            descriptionContent.setAttribute("class", "std show-content");
+            descriptionArrow.setAttribute("class","description_show-arrow");
         }
     }
-
-    console.warn(productOptions.getAttribute("class"));*/
 </script>
