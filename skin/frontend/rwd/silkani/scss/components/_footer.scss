@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  text-transform: uppercase;
   padding-top:48px;
   padding-bottom: 120px;
   margin-top: 100px;
@@ -19,6 +18,14 @@
   letter-spacing: 4px;
   line-height: 16px;
 }
+.footer__title_2 {
+  color: #050F25;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 16px;
+  padding-bottom: 30px;
+}
 
 .footer__nav__item {
   color: #050F25;
@@ -26,4 +33,25 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+}
+
+.newsletter {
+  position: relative;
+  .newsletter-input {
+    width: 275px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #E1E1E1;
+    border-right: none;
+    outline: none ;
+  }
+  .newsletter-button {
+    background-color: #050F25;
+    color: #FFFFFF;
+    border: none;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: -2px;
+  }
 }
