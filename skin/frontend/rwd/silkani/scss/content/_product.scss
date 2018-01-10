@@ -17,6 +17,7 @@
 
   .product-img-box {
     padding: 0;
+    height: 101vh;
 
     .product-image {
       height: 100%;
@@ -37,9 +38,10 @@
   }
 
   .product-shop {
-    padding: 60px 117px;
+    padding: 0 110px;
     font-family: "Playfair Display", sans-serif;
     line-height: 28px;
+    margin: 63px auto auto;
 
     input, select {
       width: 100%;
@@ -90,7 +92,52 @@
     }
 
     .description {
-      padding: 30px 0 10px;
+      padding: 30px 0 0;
+
+      .std {
+        opacity: 0;
+        height: 0;
+        display: none;
+        transition: opacity 500ms linear, height 500ms linear;
+
+        &.show-content {
+          opacity: 1;
+          height: inherit;
+          display: block;
+          transition: opacity 500ms linear, height 500ms linear;
+        }
+      }
+    }
+
+    .product-description_show-btn {
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 14px;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: "";
+        width: 150px;
+        height: 1px;
+        background-color: $c-text;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      #product-description_show-arrow {
+        transform: rotate(270deg);
+        display: inline-block;
+        margin-left: 10px;
+
+        &.description_show-arrow {
+          transform: rotate(90deg);
+        }
+      }
     }
 
     .laundromat-info {
@@ -127,12 +174,14 @@
     .product-options-bottom {
       .add-to-cart {
         border: none;
+        margin-bottom: 0;
       }
 
       .qty-wrapper {
         float: none;
         margin-right: 0;
         display: flex;
+        margin-bottom: 0;
 
         .qty {
           height: 50px;
@@ -147,6 +196,7 @@
           font-size: 16px;
           display: flex;
           margin: 5px 0;
+          cursor: pointer;
 
           span {
             margin: auto;
@@ -171,6 +221,34 @@
           letter-spacing: 1px;
           line-height: 18px;
         }
+      }
+    }
+  }
+
+  .product-collection_content {
+    display: flex;
+    height: 100vh;
+
+    .collection_history, .collection_history_img {
+      width: 50%;
+    }
+
+    .collection_history {
+      // padding: 110px;
+      font-family: "Playfair Display", sans-serif;
+      line-height: 28px;
+      margin: auto 110px;
+    }
+
+    .collection_history_img {
+      display: flex;
+      padding: 0 110px;
+
+      .img_content {
+        max-width: 500px;
+        height: 400px;
+        object-fit: cover;
+        margin: auto;
       }
     }
   }

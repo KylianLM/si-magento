@@ -9609,6 +9609,7 @@ a:hover {
 }
 .product-view .product-img-box {
   padding: 0;
+  height: 101vh;
 }
 .product-view .product-img-box .product-image {
   height: 100%;
@@ -9625,9 +9626,10 @@ a:hover {
   object-fit: cover;
 }
 .product-view .product-shop {
-  padding: 60px 117px;
+  padding: 0 110px;
   font-family: "Playfair Display", sans-serif;
   line-height: 28px;
+  margin: 63px auto auto;
 }
 .product-view .product-shop input, .product-view .product-shop select {
   width: 100%;
@@ -9672,7 +9674,46 @@ a:hover {
   color: #050F25;
 }
 .product-view .product-shop .description {
-  padding: 30px 0 10px;
+  padding: 30px 0 0;
+}
+.product-view .product-shop .description .std {
+  opacity: 0;
+  height: 0;
+  display: none;
+  transition: opacity 500ms linear, height 500ms linear;
+}
+.product-view .product-shop .description .std.show-content {
+  opacity: 1;
+  height: inherit;
+  display: block;
+  transition: opacity 500ms linear, height 500ms linear;
+}
+.product-view .product-shop .product-description_show-btn {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.product-view .product-shop .product-description_show-btn:after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #050F25;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.product-view .product-shop .product-description_show-btn #product-description_show-arrow {
+  transform: rotate(270deg);
+  display: inline-block;
+  margin-left: 10px;
+}
+.product-view .product-shop .product-description_show-btn #product-description_show-arrow.description_show-arrow {
+  transform: rotate(90deg);
 }
 .product-view .product-shop .laundromat-info {
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -9700,11 +9741,13 @@ a:hover {
 }
 .product-view .product-shop .product-options-bottom .add-to-cart {
   border: none;
+  margin-bottom: 0;
 }
 .product-view .product-shop .product-options-bottom .qty-wrapper {
   float: none;
   margin-right: 0;
   display: flex;
+  margin-bottom: 0;
 }
 .product-view .product-shop .product-options-bottom .qty-wrapper .qty {
   height: 50px;
@@ -9718,6 +9761,7 @@ a:hover {
   font-size: 16px;
   display: flex;
   margin: 5px 0;
+  cursor: pointer;
 }
 .product-view .product-shop .product-options-bottom .qty-wrapper .qty-button span {
   margin: auto;
@@ -9738,6 +9782,7 @@ a:hover {
   letter-spacing: 1px;
   line-height: 18px;
 }
+<<<<<<< develop
 
 ::selection {
   color: #fff !important;
@@ -9747,4 +9792,27 @@ a:hover {
 ::-moz-selection {
   color: #fff !important;
   background: #1E1E1E !important;
+=======
+.product-view .product-collection_content {
+  display: flex;
+  height: 100vh;
+}
+.product-view .product-collection_content .collection_history, .product-view .product-collection_content .collection_history_img {
+  width: 50%;
+}
+.product-view .product-collection_content .collection_history {
+  font-family: "Playfair Display", sans-serif;
+  line-height: 28px;
+  margin: auto 110px;
+}
+.product-view .product-collection_content .collection_history_img {
+  display: flex;
+  padding: 0 110px;
+}
+.product-view .product-collection_content .collection_history_img .img_content {
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
+>>>>>>> [ADD] collection part for product view
 }

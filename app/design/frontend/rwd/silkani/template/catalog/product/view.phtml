@@ -78,19 +78,23 @@
 
                     <?php echo $this->getChildHtml('alert_urls') ?>
 
-                    <?php if ($_product->getDescription()):?>
-                        <div class="description">
-                            <div class="std"><?php echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?></div>
-                        </div>
+                    <div class="description">
+                    <?php if ($_product->getShortDescription()):?>
+                        <div class="std show-content" id="short-description_content"><?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short-description') ?></div>
                     <?php endif;?>
+
+                    <?php if($_product->getDescription()): ?>
+                        <div class="std" id="description_content"><?php echo $_helper->productAttribute($_product, $_product->getDescription(), 'description') ?></div>
+                    <?php endif;?>
+                    </div>
+
+                    <div class="product-description_show-btn" onclick="showDescription()">
+                        <span>Plus d'informations</span><span id="product-description_show-arrow">⟨</span>
+                    </div>
 
                     <!--<div class="laundromat-info">
                         <p>Prendre soin de sa chemise</p>
                         <p>ici les images</p>
-                    </div>-->
-
-                    <!--<div id="product-options-collapse-btn" onclick="collapseOptions()">
-                        <span>YOLO</span>
                     </div>-->
 
                     <?php echo $this->getChildHtml('other');?>
@@ -129,6 +133,28 @@
 
                 </div>
 
+            </div>
+
+            <div class="product-collection_content">
+                <div class="collection_history">
+                    <div class="gold_subtitle">
+                        <span>Collection</span>
+                    </div>
+                    <h2>L'histoire de la collection</h2>
+                    <p>
+                        lorem Silkani a été crée par Clémence Des Lyons. Elle est née à Paris en 1988, issue d'une
+                        famille profondement ancrée dans les milieux créatifs et l'industrie de la mode,
+                        c'est au travers de ses études à l'Institut Marangoni qu'elle se familiarise avec
+                        les différentes étapes d'une ligne de produit. Elle poursuit par la suite son apprentissage
+                        dans la branche communication des Maisons de Luxe tel que Brioni à Londres et Roger Vivier à Paris,
+                        ce qui lui permet d'acquérir le bagage nécessaire pour poursuivre son chein dans l'industrie du luxe
+                        par le biais entrepreunarial. Elle est aujourd'hui créatrice et styliste de Silkani.
+                    </p>
+                </div>
+                <div class="collection_history_img">
+                    <img src="http://source.unsplash.com/random/" class="img_content"></img>
+                </div>
+               
             </div>
 
 
