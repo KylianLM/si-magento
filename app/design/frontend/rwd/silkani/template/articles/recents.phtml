@@ -10,22 +10,31 @@ $posts = Mage::getModel('blog/blog')
 
 if ($posts) : ?>
     <section>
-        <h1 class="title h1">Derniers Articles du - Journal</h1>
+        <h1 class="title h1 articlesh1">Derniers Articles du Journal</h1>
         <ul class="articles">
-            <?php foreach ($posts as $post): ?>
+            <?php foreach ($posts as $post):
+                $post = Mage::getModel('blog/post')->load($post->getId());
+                $cat = Mage::getModel('catalog/category')->load($post->getCatId()[0]);
+                $cat = $cat->getName(); ?>
                 <li class="article">
                     <article>
                         <div class="imgDiscover">
-                            <img src="https://source.unsplash.com/random/420x270" alt="">
                             <?php if ($post->getFeaturedImage()): ?>
-                               <!-- <img src="<?/*= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getFeaturedImage() */?>"
-                                     alt="">-->
+                                <img src="<?= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post->getFeaturedImage() ?>"
+                                     alt="">
                             <?php endif; ?>
+                            <div class="imgHover">
+                                <a class="button btn" href="<?= $this->getBaseUrl().'blog/'.$post->getIdentifier() ?>"
+                                   title="Discover">
+                                    Découvrir
+                                </a>
+                            </div>
                         </div>
                         <div>
-                            <a href="<?= $this->getBaseUrl().'blog/'.$post->getIdentifier();?>">
+                            <a href="<?= $this->getBaseUrl().'blog/'.$post->getIdentifier(); ?>">
                                 <h2 class="title subtitle"><?php echo $post->getTitle(); ?></h2></a>
-                            <?= $post->getShortContent()?>
+                            <h3 class="article__cat"><?= $cat ?></h3>
+                                <?= $post->getShortContent() ?>
                         </div>
                     </article>
                 </li>

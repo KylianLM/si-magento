@@ -3,13 +3,24 @@
  * ============================================ */
 
 .articles {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
-  margin-top: 42px;
+}
+
+.articlesh1 {
+  margin-bottom: 70px;
 }
 
 .articles .article {
-  width: 33%;
-  padding: 12px;
+  width: calc(100% / 3);
+  margin: 12px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .articles .article img {
@@ -18,14 +29,48 @@
 
 .articles .article .imgDiscover {
   position: relative;
+  &:hover {
+    .imgHover {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: inherit;
+      transition: all 350ms ease-in-out;
+    }
+  }
 }
 
-.articles .article .imgDiscover:before {
-  content: "Découvrir";
+.article__cat {
+  color: #C8A460;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 16px;
+}
+
+.articles .article .imgHover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,.2);
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background: #050F25;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 350ms ease-in-out;
+}
+
+/*.articles .article .imgDiscover:before {
+  content: '<button class="btn"> Découvrir </button>';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .2);
   z-index: 10;
   text-decoration: underline;
   color: #C8A460;
@@ -37,7 +82,7 @@
   align-items: center;
   letter-spacing: 5px;
 }
-
+*/
 .article p {
   font-family: "Playfair Display";
   font-size: 14px;

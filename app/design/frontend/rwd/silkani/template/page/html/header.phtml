@@ -130,7 +130,7 @@
     if (window.location.pathname == "/") {
 
         document.addEventListener('scroll', function (e) {
-            if (e.pageY > window.innerHeight ) {
+            if (e.pageY > (window.innerHeight - 70) ) {
                 h.classList.add('header__small');
                 sl.style.display = "block";
                 bl.style.display = "none";
