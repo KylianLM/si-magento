@@ -478,11 +478,6 @@ input[type="search"] {
   box-sizing: border-box;
 }
 
-*::selection, *::-moz-selection {
-  color: #fff;
-  background: #1E1E1E;
-}
-
 /* ============================================ *
  * Base Styles
  * ============================================ */
@@ -10762,7 +10757,7 @@ div.calendar table td.button {
 .blog__list {
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  padding: 84px 32px;
 }
 
 .blog__list .blog__item {
@@ -11064,7 +11059,7 @@ div.calendar table td.button {
 }
 .instagram-section .instagram-wrapper .row .block-picture {
   position: relative;
-  width: 180px;
+  width: calc(calc(100% / 2) - 20px);
   height: 180px;
   margin: 10px;
 }
@@ -11119,7 +11114,7 @@ div.calendar table td.button {
 .category-section .category-wrapper {
   max-width: 1280px;
   height: auto;
-  margin: 150px auto 0;
+  margin: 100px auto 0;
 }
 .category-section .category-wrapper .title-1 {
   padding-left: 10px;
@@ -11140,7 +11135,7 @@ div.calendar table td.button {
 }
 .category-section .category-wrapper .select-style select {
   width: 100%;
-  padding: 0 20px;
+  padding: 12px 20px;
   line-height: 40px;
   font-size: 12px;
   text-transform: uppercase;
@@ -11151,6 +11146,7 @@ div.calendar table td.button {
   background: transparent;
   background-image: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .category-section .category-wrapper .select-style select:focus {
   outline: none;
@@ -11192,7 +11188,8 @@ div.calendar table td.button {
   position: relative;
   width: 100%;
   height: 520px;
-  background-color: lightcoral;
+  background: url("") center center;
+  background-size: cover;
   z-index: 1;
 }
 .category-section .category-wrapper .category-list .category-items .category-item .item-background:hover .item-background-hover {
@@ -11249,10 +11246,14 @@ div.calendar table td.button {
 }
 .category-section .category-wrapper .category-list .category-items .category-item .item-background .item-background-hover .block-size .sizes .size {
   display: inline-block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
   margin-right: 10px;
+  color: #050F25;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-align: center;
 }
 .category-section .category-wrapper .category-list .category-items .category-item .item-background .item-background-hover .block-size .sizes .size:last-of-type {
   margin-right: 0;
@@ -11266,6 +11267,10 @@ div.calendar table td.button {
   font-size: 10px;
   letter-spacing: 2px;
   font-style: italic;
+  color: #050F25;
+  font-family: "Playfair Display";
+  line-height: 14px;
+  text-align: center;
 }
 .category-section .category-wrapper .category-list .category-items .category-item .item-price {
   padding: 40px 0;
@@ -11748,6 +11753,16 @@ a:hover {
   .cms-page-view .about_container .about_left-media, .cms-page-view .about_container .about_right-media {
     height: 200px;
   }
+}
+
+::selection {
+  color: #fff !important;
+  background: #1E1E1E !important;
+}
+
+::-moz-selection {
+  color: #fff !important;
+  background: #1E1E1E !important;
 }
 
 .cms-page-view .std p {

@@ -118,7 +118,7 @@
         <ul class="header__nav">
             <li class="header__nav__item"><a href="">compte</a></li>
             <li class="header__nav__item"><a href="">panier</a></li>
-            <li class="header__nav__item"><a href="">FR</a></li>
+            <li class="header__nav__item"><a href="">FR €</a></li>
         </ul>
     </nav>
 </header>
@@ -128,9 +128,9 @@
         sl = document.getElementById('logosmall');
 
     if (window.location.pathname == "/") {
-
         document.addEventListener('scroll', function (e) {
-            if (e.pageY > (window.innerHeight - 70) ) {
+
+            if (e.pageY > (window.innerHeight - 70)) {
                 h.classList.add('header__small');
                 sl.style.display = "block";
                 bl.style.display = "none";

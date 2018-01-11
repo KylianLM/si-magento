@@ -36,6 +36,10 @@ class AW_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widge
             'name' => 'featured_image',
             'label' => 'Featured Image',
         ));
+        $fieldset->addField('large_image', 'image', array(
+            'name' => 'large_image',
+            'label' => 'Large Image',
+        ));
 
         $fieldset->addField(
             'title',
