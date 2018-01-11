@@ -1,0 +1,276 @@
+.product-view {
+  .product-info_content {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+    line-height: 32px;
+    margin-bottom: 33px;
+  }
+
+  .add-to-cart-wrapper {
+    padding: 0;
+    float: none;
+  }
+
+  .product-img-box {
+    padding: 0;
+    height: 101vh;
+
+    .product-image {
+      height: 100%;
+      width: 100%;
+
+      .product-image-gallery {
+        height: inherit;
+        width: inherit;
+
+        img {
+          height: 100%;
+          max-height: none;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .product-shop {
+    padding: 0 110px;
+    font-family: "Playfair Display", sans-serif;
+    line-height: 28px;
+    margin: auto;
+
+    input, select {
+      width: 100%;
+      text-align: left;
+      font-size: 14px;
+      line-height: 14px;
+      margin: 5px 0;
+      height: 50px;
+      border-radius: 2px !important;
+      background-color: transparent;
+      padding: 0 20px;
+      color: $c-text;
+      border: 1px solid $c-input-border;
+    }
+
+    select {
+      -webkit-appearance: button;
+    }
+
+    .product_new-collection {
+      margin-bottom: 30px;
+
+      span {
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        background-color: $c-gold;
+        color: #fff;
+        padding: 5px 10px;
+      }
+    }
+
+    .product-name {
+      float: none;
+    }
+
+    .price-info {
+      font-family: "Playfair Display", sans-serif;
+      padding: 0 0 18px;
+      max-width: none;
+      float: none;
+      text-align: left;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background-color: $c-text;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .regular-price .price {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        color: $c-text;
+      }
+    }
+
+    .description {
+      padding: 30px 0 0;
+      height: 245px;
+      position: relative;
+
+      > div {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background-color: #fff;
+        z-index: 2;
+      }
+
+      .std {
+        opacity: 0;
+        height: 0;
+        display: none;
+        transition: opacity 500ms linear, height 500ms linear;
+
+        &.show-content {
+          opacity: 1;
+          height: inherit;
+          display: block;
+          transition: opacity 500ms linear, height 500ms linear;
+        }
+      }
+    }
+
+    .product-description_show-btn {
+      padding-bottom: 10px;
+      margin: 30px 0;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 14px;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: "";
+        width: 150px;
+        height: 1px;
+        background-color: $c-text;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      #product-description_show-arrow {
+        transform: rotate(270deg);
+        display: inline-block;
+        margin-left: 10px;
+
+        &.description_show-arrow {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .laundromat-info {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+    }
+
+    .product-options, .product-options-bottom {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
+
+    .product-options {
+      .last {
+        padding: 0;
+      }
+
+      dd {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+
+      p.required {
+        display: none;
+      }
+    }
+
+    .product-options-bottom {
+      .add-to-cart {
+        border: none;
+        margin-bottom: 0;
+      }
+
+      .qty-wrapper {
+        float: none;
+        margin-right: 0;
+        display: flex;
+        margin-bottom: 0;
+
+        .qty {
+          height: 50px;
+          flex: 1;
+        }
+
+        .qty-button {
+          width: 50px;
+          height: 50px;
+          background-color: $c-text;
+          color: #fff;
+          font-size: 16px;
+          display: flex;
+          margin: 5px 0;
+          cursor: pointer;
+
+          span {
+            margin: auto;
+          }
+        }
+
+        .qty-button:last-child {
+          margin-left: 1px;
+        }
+      }
+
+      .add-to-cart-buttons {
+        width: 100%;
+        float: none;
+
+        .button {
+          height: 60px;
+          margin-top: 5px;
+          background-color: $c-text;
+          width: 100%;
+          font-size: 18px;
+          letter-spacing: 1px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .product-collection_content {
+    display: flex;
+    height: 100vh;
+
+    .collection_history, .collection_history_img {
+      flex: 1;
+    }
+
+    .collection_history {
+      font-family: "Playfair Display", sans-serif;
+      line-height: 28px;
+      margin: auto 110px;
+    }
+
+    .collection_history_img {
+      display: flex;
+      padding: 0 110px;
+
+      .img_content {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: auto;
+      }
+    }
+  }
+}
+

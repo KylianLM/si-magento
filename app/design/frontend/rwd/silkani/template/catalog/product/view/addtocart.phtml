@@ -25,18 +25,72 @@
  */
 ?>
 <?php $_product = $this->getProduct(); ?>
-<?php $buttonTitle = Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>
+<?php $buttonTitle = Mage::helper('core')->quoteEscape($this->__('Ajouter au panier')); ?>
 <?php if($_product->isSaleable()): ?>
     <div class="add-to-cart">
         <?php if(!$_product->isGrouped()): ?>
         <div class="qty-wrapper">
-            <label for="qty"><?php echo $this->__('Qty:') ?></label>
-            <input type="text" pattern="\d*(\.\d+)?" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+            <!--<label for="qty"><?php /*echo $this->__('Qty:') */?></label>-->
+            <input type="text" pattern="\d*(\.\d+)?" id="qty-input" name="qty" id="qty" maxlength="12" value="<?php echo ($this->getProductDefaultQty() * 1) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+            <div class="qty-button" onclick="removeQuantity()">
+                <span>-</span>
+            </div>
+            <div class="qty-button" onclick="addQuantity()">
+                <span>+</span>
+            </div>
         </div>
         <?php endif; ?>
         <div class="add-to-cart-buttons">
-            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
-            <?php echo $this->getChildHtml('', true, true) ?>
+            <button
+                <?php if($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
+                    title="<?php echo $buttonTitle ?>"
+                <?php else: ?>
+                    disabled
+                    title="Rupture de stock"
+                <?php endif; ?>
+                type="button"
+                class="button btn-cart"
+                onclick="productAddToCartForm.submit(this)"
+            >
+                <span>
+                    <span><?php echo $buttonTitle ?></span>
+                </span>
+            </button>
+            <?php /*echo $this->getChildHtml('', true, true) */?>
         </div>
     </div>
 <?php endif; ?>
+<script type="text/javascript">
+    var quantity = 0;
+    const qtyElement = document.getElementById('qty-input');
+    const qtyValue = qtyElement.getAttribute("value");
+    const shortDescriptionContent = document.getElementById('short-description_content');
+    const descriptionContent = document.getElementById('description_content');
+    const descriptionArrow = document.getElementById('product-description_show-arrow');
+
+    function addQuantity() {
+        quantity ++;
+
+        return qtyElement.setAttribute("value", (Number(qtyValue) + Number(quantity)).toString());
+    }
+
+    function removeQuantity() {
+        if(quantity > 0) {
+            quantity --;
+        }
+
+        return qtyElement.setAttribute("value", (Number(qtyValue) + Number(quantity)).toString());
+    }
+
+    function showDescription() {
+        if(shortDescriptionContent.getAttribute("class") === "std") {
+            shortDescriptionContent.setAttribute("class", "std show-content");
+            descriptionContent.setAttribute("class", "std");
+            descriptionArrow.setAttribute("class","");
+        } else if(shortDescriptionContent.getAttribute("class") === "std show-content") {
+            shortDescriptionContent.setAttribute("class", "std");
+            descriptionContent.setAttribute("class", "std show-content");
+            descriptionArrow.setAttribute("class","description_show-arrow");
+        }
+    }
+</script>

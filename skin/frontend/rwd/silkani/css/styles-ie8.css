@@ -2291,7 +2291,7 @@ select + select {
 
 select[multiple] {
   width: 270px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   font-size: 15px;
   padding: 5px;
 }
@@ -2317,7 +2317,7 @@ textarea {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   background: #FFFFFF;
   font-size: 15px;
 }
@@ -2384,11 +2384,11 @@ input[type=text].qty {
  * Placeholder
  */
 ::-webkit-input-placeholder {
-  color: #A0A0A0;
+  color: #050F25;
 }
 
 input:-moz-placeholder {
-  color: #A0A0A0;
+  color: #050F25;
 }
 
 /* -------------------------------------------- *
@@ -2584,7 +2584,7 @@ form .form-instructions {
 
 .data-table thead th,
 .data-table tbody td {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
 }
 
 .data-table tbody td,
@@ -2608,7 +2608,7 @@ form .form-instructions {
  * Generic Info Table
  * ============================================ */
 .info-box {
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   padding: 12px 15px;
   margin: 0 0 15px;
 }
@@ -2636,11 +2636,11 @@ form .form-instructions {
  * ============================================ */
 .zebra-table tr:first-child,
 .zebra-table th:first-child {
-  border-top: 1px solid #C0C0C0;
+  border-top: 1px solid #E1E1E1;
 }
 .zebra-table td,
 .zebra-table th {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
   padding: 6px;
   background-color: transparent;
 }
@@ -4587,18 +4587,18 @@ p.product-name a:hover {
 
 #product-attribute-specs-table {
   max-width: 50em;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
 }
 #product-attribute-specs-table th {
-  border-right: 1px solid #C0C0C0;
-  border-bottom: 1px solid #C0C0C0;
+  border-right: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
 }
 
 /* -------------------------------------------- *
  * Catalog - Grouped Product List
  */
 .grouped-items-table-wrapper {
-  border: solid 1px #C0C0C0;
+  border: solid 1px #E1E1E1;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -5223,7 +5223,7 @@ p.product-name a:hover {
   padding-left: 15px;
 }
 .cart-table tr {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
 }
 .cart-table tfoot tr {
   background: none;
@@ -5321,7 +5321,7 @@ p.product-name a:hover {
 }
 .cart-table .product-cart-actions .qty {
   height: 30px;
-  border-color: #C0C0C0;
+  border-color: #E1E1E1;
   border-radius: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -5346,7 +5346,7 @@ p.product-name a:hover {
   max-width: 100%;
   height: 30px;
   display: block;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
 }
 .shipping select.validation-failed {
   border-color: #DF280A;
@@ -7253,7 +7253,7 @@ div.paypal-logo span > img {
   width: 100%;
 }
 #wishlist-table.clean-table th {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #E1E1E1;
 }
 #wishlist-table.clean-table td {
   padding: 15px;
@@ -7279,7 +7279,7 @@ div.paypal-logo span > img {
   margin: 5px 0;
 }
 #wishlist-table textarea {
-  border: 1px solid #C0C0C0;
+  border: 1px solid #E1E1E1;
   width: 100%;
   height: 45px;
   font-size: 11px;
@@ -9253,6 +9253,27 @@ a:hover {
   margin-top: 28px;
 }
 
+.gold_subtitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #937845;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 14px;
+  margin-bottom: 47px;
+  padding-bottom: 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+.gold_subtitle:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #937845;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
 .header {
   z-index: 100;
   position: absolute;
@@ -9461,26 +9482,6 @@ a:hover {
     width: 100%;
   }
 }
-.cms-page-view .about_container .gold_subtitle {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  color: #937845;
-  font-size: 14px;
-  letter-spacing: 4px;
-  line-height: 14px;
-  margin-bottom: 47px;
-  padding-bottom: 18px;
-  position: relative;
-  text-transform: uppercase;
-}
-.cms-page-view .about_container .gold_subtitle:after {
-  content: '';
-  width: 70px;
-  height: 2px;
-  background-color: #937845;
-  display: block;
-  position: absolute;
-  bottom: 0;
-}
 .cms-page-view .about_container .about_left-media {
   background: no-repeat url(../images/media/about-left.jpg) center;
   -webkit-background-size: cover;
@@ -9591,6 +9592,235 @@ a:hover {
   .cms-page-view .about_container .about_left-media, .cms-page-view .about_container .about_right-media {
     height: 200px;
   }
+}
+
+.product-view .product-info_content {
+  display: flex;
+}
+.product-view h2 {
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  margin-bottom: 33px;
+}
+.product-view .add-to-cart-wrapper {
+  padding: 0;
+  float: none;
+}
+.product-view .product-img-box {
+  padding: 0;
+  height: 101vh;
+}
+.product-view .product-img-box .product-image {
+  height: 100%;
+  width: 100%;
+}
+.product-view .product-img-box .product-image .product-image-gallery {
+  height: inherit;
+  width: inherit;
+}
+.product-view .product-img-box .product-image .product-image-gallery img {
+  height: 100%;
+  max-height: none;
+  width: 100%;
+  object-fit: cover;
+}
+.product-view .product-shop {
+  padding: 0 110px;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 28px;
+  margin: auto;
+}
+.product-view .product-shop input, .product-view .product-shop select {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 5px 0;
+  height: 50px;
+  border-radius: 2px !important;
+  background-color: transparent;
+  padding: 0 20px;
+  color: #050F25;
+  border: 1px solid #E1E1E1;
+}
+.product-view .product-shop select {
+  -webkit-appearance: button;
+}
+.product-view .product-shop .product_new-collection {
+  margin-bottom: 30px;
+}
+.product-view .product-shop .product_new-collection span {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: #937845;
+  color: #fff;
+  padding: 5px 10px;
+}
+.product-view .product-shop .product-name {
+  float: none;
+}
+.product-view .product-shop .price-info {
+  font-family: "Playfair Display", sans-serif;
+  padding: 0 0 18px;
+  max-width: none;
+  float: none;
+  text-align: left;
+  position: relative;
+}
+.product-view .product-shop .price-info:after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #050F25;
+  position: absolute;
+  bottom: 0;
+}
+.product-view .product-shop .price-info .regular-price .price {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  line-height: 30px;
+  color: #050F25;
+}
+.product-view .product-shop .description {
+  padding: 30px 0 0;
+  height: 245px;
+  position: relative;
+}
+.product-view .product-shop .description > div {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+.product-view .product-shop .description .std {
+  opacity: 0;
+  height: 0;
+  display: none;
+  transition: opacity 500ms linear, height 500ms linear;
+}
+.product-view .product-shop .description .std.show-content {
+  opacity: 1;
+  height: inherit;
+  display: block;
+  transition: opacity 500ms linear, height 500ms linear;
+}
+.product-view .product-shop .product-description_show-btn {
+  padding-bottom: 10px;
+  margin: 30px 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.product-view .product-shop .product-description_show-btn:after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #050F25;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.product-view .product-shop .product-description_show-btn #product-description_show-arrow {
+  transform: rotate(270deg);
+  display: inline-block;
+  margin-left: 10px;
+}
+.product-view .product-shop .product-description_show-btn #product-description_show-arrow.description_show-arrow {
+  transform: rotate(90deg);
+}
+.product-view .product-shop .laundromat-info {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.product-view .product-shop .product-options, .product-view .product-shop .product-options-bottom {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.product-view .product-shop .product-options .last {
+  padding: 0;
+}
+.product-view .product-shop .product-options dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.product-view .product-shop .product-options p.required {
+  display: none;
+}
+.product-view .product-shop .product-options-bottom .add-to-cart {
+  border: none;
+  margin-bottom: 0;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper {
+  float: none;
+  margin-right: 0;
+  display: flex;
+  margin-bottom: 0;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper .qty {
+  height: 50px;
+  flex: 1;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper .qty-button {
+  width: 50px;
+  height: 50px;
+  background-color: #050F25;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper .qty-button span {
+  margin: auto;
+}
+.product-view .product-shop .product-options-bottom .qty-wrapper .qty-button:last-child {
+  margin-left: 1px;
+}
+.product-view .product-shop .product-options-bottom .add-to-cart-buttons {
+  width: 100%;
+  float: none;
+}
+.product-view .product-shop .product-options-bottom .add-to-cart-buttons .button {
+  height: 60px;
+  margin-top: 5px;
+  background-color: #050F25;
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+.product-view .product-collection_content {
+  display: flex;
+  height: 100vh;
+}
+.product-view .product-collection_content .collection_history, .product-view .product-collection_content .collection_history_img {
+  flex: 1;
+}
+.product-view .product-collection_content .collection_history {
+  font-family: "Playfair Display", sans-serif;
+  line-height: 28px;
+  margin: auto 110px;
+}
+.product-view .product-collection_content .collection_history_img {
+  display: flex;
+  padding: 0 110px;
+}
+.product-view .product-collection_content .collection_history_img .img_content {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
 }
 
 ::selection {
