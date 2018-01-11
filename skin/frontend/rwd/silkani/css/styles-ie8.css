@@ -9800,17 +9800,6 @@ a:hover {
   letter-spacing: 1px;
   line-height: 18px;
 }
-<<<<<<< develop
-
-::selection {
-  color: #fff !important;
-  background: #1E1E1E !important;
-}
-
-::-moz-selection {
-  color: #fff !important;
-  background: #1E1E1E !important;
-=======
 .product-view .product-collection_content {
   display: flex;
   height: 100vh;
@@ -9832,5 +9821,14 @@ a:hover {
   height: 400px;
   object-fit: cover;
   margin: auto;
->>>>>>> [ADD] collection part for product view
+}
+
+::selection {
+  color: #fff !important;
+  background: #1E1E1E !important;
+}
+
+::-moz-selection {
+  color: #fff !important;
+  background: #1E1E1E !important;
 }
