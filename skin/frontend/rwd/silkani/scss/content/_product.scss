@@ -1,6 +1,7 @@
 .product-view {
   .product-info_content {
     display: flex;
+    margin-top:51px;
   }
 
   h2 {
@@ -17,7 +18,7 @@
 
   .product-img-box {
     padding: 0;
-    height: 101vh;
+    height: calc(101vh - 51px);
 
     .product-image {
       height: 100%;
@@ -59,6 +60,7 @@
 
     select {
       -webkit-appearance: button;
+      -moz-appearance: none;
     }
 
     .product_new-collection {

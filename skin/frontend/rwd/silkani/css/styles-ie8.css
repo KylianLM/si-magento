@@ -9596,6 +9596,7 @@ a:hover {
 
 .product-view .product-info_content {
   display: flex;
+  margin-top: 51px;
 }
 .product-view h2 {
   font-size: 32px;
@@ -9609,7 +9610,7 @@ a:hover {
 }
 .product-view .product-img-box {
   padding: 0;
-  height: 101vh;
+  height: calc(101vh - 51px);
 }
 .product-view .product-img-box .product-image {
   height: 100%;
@@ -9646,6 +9647,7 @@ a:hover {
 }
 .product-view .product-shop select {
   -webkit-appearance: button;
+  -moz-appearance: none;
 }
 .product-view .product-shop .product_new-collection {
   margin-bottom: 30px;
