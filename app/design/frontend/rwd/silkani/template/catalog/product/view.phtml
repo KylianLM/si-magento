@@ -129,19 +129,16 @@
                     <div class="gold_subtitle">
                         <span>Collection</span>
                     </div>
-                    <h2>L'histoire de la collection</h2>
-                    <p>
-                        lorem Silkani a été crée par Clémence Des Lyons. Elle est née à Paris en 1988, issue d'une
-                        famille profondement ancrée dans les milieux créatifs et l'industrie de la mode,
-                        c'est au travers de ses études à l'Institut Marangoni qu'elle se familiarise avec
-                        les différentes étapes d'une ligne de produit. Elle poursuit par la suite son apprentissage
-                        dans la branche communication des Maisons de Luxe tel que Brioni à Londres et Roger Vivier à Paris,
-                        ce qui lui permet d'acquérir le bagage nécessaire pour poursuivre son chein dans l'industrie du luxe
-                        par le biais entrepreunarial. Elle est aujourd'hui créatrice et styliste de Silkani.
-                    </p>
+                    <?php
+                    $categoryIds = $_product->getCategoryIds();
+                    $_categoryId = $categoryIds[0];
+                    $_category = Mage::getModel('catalog/category')->load($_categoryId);
+                    echo $_category->getDescription();
+                    ?>
+
                 </div>
                 <div class="collection_history_img">
-                    <img src="http://source.unsplash.com/random/" class="img_content"></img>
+                    <img src="<?= $_category->getImageUrl()?>" class="img_content"></img>
                 </div>
                
             </div>
