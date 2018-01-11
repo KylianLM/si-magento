@@ -11396,7 +11396,7 @@ a:hover {
   padding: 0 110px;
   font-family: "Playfair Display", sans-serif;
   line-height: 28px;
-  margin: 63px auto auto;
+  margin: auto;
 }
 .product-view .product-shop input, .product-view .product-shop select {
   width: 100%;
@@ -11413,6 +11413,15 @@ a:hover {
 }
 .product-view .product-shop select {
   -webkit-appearance: button;
+}
+.product-view .product-shop .product_new-collection {
+  margin-bottom: 30px;
+}
+.product-view .product-shop .product_new-collection span {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: #937845;
+  color: #fff;
+  padding: 5px 10px;
 }
 .product-view .product-shop .product-name {
   float: none;
@@ -11442,6 +11451,15 @@ a:hover {
 }
 .product-view .product-shop .description {
   padding: 30px 0 0;
+  height: 245px;
+  position: relative;
+}
+.product-view .product-shop .description > div {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
 }
 .product-view .product-shop .description .std {
   opacity: 0;
@@ -11457,7 +11475,7 @@ a:hover {
 }
 .product-view .product-shop .product-description_show-btn {
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -11554,7 +11572,7 @@ a:hover {
   height: 100vh;
 }
 .product-view .product-collection_content .collection_history, .product-view .product-collection_content .collection_history_img {
-  width: 50%;
+  flex: 1;
 }
 .product-view .product-collection_content .collection_history {
   font-family: "Playfair Display", sans-serif;
@@ -11566,7 +11584,7 @@ a:hover {
   padding: 0 110px;
 }
 .product-view .product-collection_content .collection_history_img .img_content {
-  max-width: 500px;
+  width: 100%;
   height: 400px;
   object-fit: cover;
   margin: auto;

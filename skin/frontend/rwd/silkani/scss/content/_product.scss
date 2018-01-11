@@ -41,7 +41,7 @@
     padding: 0 110px;
     font-family: "Playfair Display", sans-serif;
     line-height: 28px;
-    margin: 63px auto auto;
+    margin: auto;
 
     input, select {
       width: 100%;
@@ -59,6 +59,17 @@
 
     select {
       -webkit-appearance: button;
+    }
+
+    .product_new-collection {
+      margin-bottom: 30px;
+
+      span {
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        background-color: $c-gold;
+        color: #fff;
+        padding: 5px 10px;
+      }
     }
 
     .product-name {
@@ -93,6 +104,16 @@
 
     .description {
       padding: 30px 0 0;
+      height: 245px;
+      position: relative;
+
+      > div {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background-color: #fff;
+        z-index: 2;
+      }
 
       .std {
         opacity: 0;
@@ -111,7 +132,7 @@
 
     .product-description_show-btn {
       padding-bottom: 10px;
-      margin-bottom: 30px;
+      margin: 30px 0;
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 16px;
       letter-spacing: 2px;
@@ -230,11 +251,10 @@
     height: 100vh;
 
     .collection_history, .collection_history_img {
-      width: 50%;
+      flex: 1;
     }
 
     .collection_history {
-      // padding: 110px;
       font-family: "Playfair Display", sans-serif;
       line-height: 28px;
       margin: auto 110px;
@@ -245,7 +265,7 @@
       padding: 0 110px;
 
       .img_content {
-        max-width: 500px;
+        width: 100%;
         height: 400px;
         object-fit: cover;
         margin: auto;
